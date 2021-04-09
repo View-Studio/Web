@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>speed_coding</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style media="screen">
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  background: url('https://media.giphy.com/media/KbfHd8I4Nu0SMs40wh/giphy.gif') no-repeat;
+  background-size: 100% 100%;
+}
+
+  #menu-bar {
+    height: 13%;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    list-style: none;
+    font-size: 2rem;
+    color: #ffadc5 /*204, 102, 102*/;
+    padding: 0.7%;
+    text-align: center;
+    background-color: rgba(153,153,204, 0.5);
+    border: 1px solid rgba(153,153,204, 0.5);
+    border-radius: 40%;
+  }
+</style>
+
+  </head>
+  <body>
+    <div class="grid">
+      <header id="menu-bar">
+        <ul class="menu">
+          <li class="menu-item">menu</li>
+          <li class="menu-item">menu</li>
+          <li class="menu-item">menu</li>
+          <li class="menu-item">menu</li>
+        </ul>
+      </header>
+    </div>
+  </body>
+</html>
