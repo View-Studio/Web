@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+<style>
+  .container {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 80vh;
+    background: gray;
+  }
+
+  .item {
+    /* flex-grow: 1; */
+    /* flex-grow는 content의 넓이를 제외한 여백의 크기 비율이다. */
+    /* flex-basis: 0; */
+    /* flex-basis 속성의 기본 속성 값은 auto이다. */
+    flex: 1;
+    border: 3px solid #000;
+    font-size: 3rem;
+    background: #fff;
+  }
+
+  /* .item:nth-child(1) { flex-grow: 1; }
+  .item:nth-child(2) { flex-grow: 5; }
+  .item:nth-child(3) { flex-grow: 2; }
+  .item:nth-child(4) { flex-grow: 3; }
+  .item:nth-child(5) { flex-grow: 1; } */
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="item">AAA</div>
+    <div class="item">B</div>
+    <div class="item">CCCCCC</div>
+    <div class="item">DDD</div>
+    <div class="item">E</div>
+  </div>
+</body>
+</html>
