@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+
+  <style>
+    .world {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: 80vh;
+      background: #fff000;
+      /* perspective: 500px; */
+      /* 눈에서의 거리, px크기가 클 수록 멀리, px크기가 작을 수록 가까이 */
+      /* world에 perspective속성을 주면 눈으로 보는 것과 유사하게 원근감 적용이 되고, 회전하는 요소 자체에 perspective속성을 주면 균일하게 원근감 적용이 된다. */
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 150px;
+      margin: 1em;
+      border-radius: 0.5em;
+      font-size: 1.5rem;
+      background: red;
+      transform: perspective(500px) rotateY(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="world">
+    <div class="card">CARD</div>
+    <div class="card">CARD</div>
+    <div class="card">CARD</div>
+  </div>
+</body>
+</html>

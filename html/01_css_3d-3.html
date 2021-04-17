@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+
+  <style>
+    .world {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 80vw;
+      height: 80vh;
+      background: #fff000;
+      perspective: 500px;
+    }
+
+    .card-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 150px;
+      margin: -75px 0 0 -50px; /* 음수 마진 */
+      border-radius: 0.5em;
+      font-size: 1.5rem;
+      transition: 1s;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .card-side-front {
+      background: #fff;
+      transform: rotateY(0deg);
+      z-index: 1;
+    }
+
+    .card-side-back {
+      background: #f00;
+      transform: rotateY(180deg);
+      z-index: 0;
+    }
+
+    .world:hover .card-side-front {
+      transform: rotateY(180deg);
+    }
+
+    .world:hover .card-side-back {
+      transform: rotateY(360deg);
+    }
+
+    <!-- IE에서는 transform-style: preserve3d; 가 적용이 안 되기 때문에 위와 같이 코딩해야됨 -->
+
+  </style>
+</head>
+<body>
+  <div class="world">
+    <div class="card-side card-side-front">F</div>
+    <div class="card-side card-side-back">B</div>
+  </div>
+</body>
+</html>
