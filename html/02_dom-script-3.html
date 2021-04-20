@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+      .characters {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          background: #fff000;
+      }
+      .ilbuni {
+          width: 100px;
+          cursor: pointer;
+      }
+      .characters .ilbuni {
+          display: inline-block;
+      }
+      .special {
+          border: 10px dashed red;
+      }
+  </style>
+</head>
+<body>
+  <div class="characters">
+      <div class="ilbuni a">
+          <img src="../image/ilbuni_0.png" alt="일분이">
+      </div>
+      <div class="ilbuni b">
+          <img src="../image/ilbuni_1.png" alt="일분이">
+      </div>
+      <div class="ilbuni c">
+          <img src="../image/ilbuni_2.png" alt="일분이">
+      </div>
+  </div>
+  <div class="ilbuni d">
+      <img src="../image/ilbuni_3.png" alt="일분이">
+  </div>
+
+  <script>
+
+        const pElem = document.createElement('p');
+        pElem.innerHtml = '<a href="#">안녕</a>???';
+        const charactersElem = document.querySelector('.characters');
+        charactersElem.appendChild(pElem)
+        charactersElem.removeChild(document.querySelector('.b'))
+
+        const ilbuni = document.querySelector('.ilbuni')
+        ilbuni.classList.add('special')
+        ilbuni.className = 'special';
+        ilbuni.classList.remove('ilbuni')
+        ilbuni.classList.toggle('ilbuni')    // 괄호 안에 적혀있는 클래스가 있으면 삭제시키고, 없으면 추가시키는 메서드. (토글버튼 같은 메서드)
+
+  </script>
+</body>
+</html>
