@@ -37,7 +37,6 @@
     }
 
     .login-box {
-      list-style-type: none;
       z-index: 1;
     }
 
@@ -56,6 +55,9 @@
       margin-bottom: 20px;
       border-radius: 2.5em;
       outline: none;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -o-transition: 1s;
       transition: 1s;
     }
 
@@ -64,15 +66,36 @@
       background: #ff7675;
     }
 
+    .login-btn {
+      padding: 2em;
+      width: 18.5rem;
+      margin-bottom: 20px;
+      border-radius: 2.5em;
+      cursor: pointer;
+      outline: none;
+      background: #ffbe76;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+    }
+
+    .login-btn:hover {
+      transform: scale(.5);
+      font-size: 32px;
+      padding: 1.5em 2em;
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
     <div class="box">
-      <ul class="login-box">
-        <li><input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off"></li>
-        <li><input class="usertext" type="password" name="userPW" placeholder="userPW"></li>
-      </ul>
+      <form action="#" method="post" class="login-box">
+        <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
+        <input class="usertext" type="password" name="userPW" placeholder="userPW">
+        <input type="submit" class="login-btn" value="로그인">
+      </form>
       <div class="machine-box">
         <div class="circle-container">
           <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-red-semi-5aec49dbe5d420f928cece7001b96267ee17a9d3577374b68b4fba47c547bd75.svg
