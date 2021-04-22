@@ -26,14 +26,19 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      background: rgba(99, 110, 114, 0.5);
+      background: rgba(53, 59, 72);
+      /* background: rgba(99, 110, 114, 0.5); */
+      /* background: url('blackboard-1.jpg') no-repeat;
+      background-size: cover; */
     }
 
     .box {
+      position: relative;
+      left: 115px;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10px;
+      width: 0px;
     }
 
     .login-box {
@@ -81,20 +86,40 @@
     }
 
     .login-btn:hover {
-      transform: scale(.5);
-      font-size: 32px;
-      padding: 1.5em 2em;
+      border-radius: 0px;
+    }
+
+    .etc-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      right: 5px;
+      top: 180px;
+    }
+
+    .etc-btn {
+      margin: 20px;
+      font-size: 1.05em;
+      color: #8395a7;
+      text-decoration: none;
+      transition: .4s;
+    }
+
+    .etc-btn:hover {
+      color: #01a3a4;
     }
 
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="origin"></div>
     <div class="box">
       <form action="#" method="post" class="login-box">
         <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
         <input class="usertext" type="password" name="userPW" placeholder="userPW">
-        <input type="submit" class="login-btn" value="로그인">
+        <input class="login-btn" type="submit" value="로그인">
       </form>
       <div class="machine-box">
         <div class="circle-container">
@@ -120,6 +145,11 @@
           " alt="" class="circle-1">
         </div>
       </div>
+    </div>
+    <div class="etc-box">
+      <a class="etc-btn" href="#">회원가입</a>
+      <p>|</p>
+      <a class="etc-btn" href="#">ID/PW 찾기</a>
     </div>
   </div>
 </body>
