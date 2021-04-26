@@ -26,10 +26,10 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      background: rgba(53, 59, 72);
+      /* background: rgba(53, 59, 72); */
       /* background: rgba(99, 110, 114, 0.5); */
-      /* background: url('blackboard-1.jpg') no-repeat;
-      background-size: cover; */
+      background: url('https://i.pinimg.com/originals/83/ea/d6/83ead6d874a749ebab256af2b7781878.png') no-repeat;
+      background-size: 100% 100%;
     }
 
     .box {
@@ -55,6 +55,7 @@
 
 
     .usertext {
+      background: #5b7484;
       padding: 2em;
       width: 15rem;
       margin-bottom: 20px;
@@ -66,9 +67,17 @@
       transition: .7s;
     }
 
+    .usertext::placeholder {
+      color: #f4d4d4;
+    }
+
     .usertext:focus {
       transform: scale(1.3);
-      background: #ff7675;
+      background-color: #f4d4d4;
+    }
+
+    .usertext:focus::placeholder {
+      color: #5b7484;
     }
 
     .login-btn {
@@ -78,7 +87,8 @@
       border-radius: 2.5em;
       cursor: pointer;
       outline: none;
-      background: #ffbe76;
+      background: #ffb8b8;
+      color: #4a69bd;
       -webkit-transition: 1s;
       -moz-transition: 1s;
       -o-transition: 1s;
@@ -100,8 +110,8 @@
 
     .etc-btn {
       margin: 20px;
+      color: #57606f;
       font-size: 1.05em;
-      color: #8395a7;
       text-decoration: none;
       transition: .4s;
     }

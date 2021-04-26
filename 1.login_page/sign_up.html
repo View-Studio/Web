@@ -24,18 +24,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #222;
+      background: url('https://i.pinimg.com/originals/53/76/ed/5376ed0ba13ea516274e975f79806932.png') no-repeat;
+      background-size: 100% 100%;
     }
 
     .container {
       width: 30%;
       height: 100%;
-      background: #4834d4;
     }
 
     .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 7%;
-      background: #2c2c54;
     }
 
     .information {
@@ -43,7 +45,6 @@
       justify-content: center;
       align-items: center;
       height: 86%;
-      background: #40407a;
     }
 
     .inform-box {
@@ -57,7 +58,17 @@
       outline: none;
       padding: 1rem;
       border-radius: 2rem;
+      background: #85837b;
+      color: #e7e6dc;
       transition: .5s;
+    }
+
+    .usertext::placeholder {
+      color: #e7e6dc;
+    }
+
+    .usertext:focus::placeholder {
+      color: rgb(195, 11, 7);
     }
 
     .date {
@@ -67,19 +78,29 @@
     .join-btn {
       outline: none;
       padding: 1rem;
-      border-radius: .3rem;
-      background: linear-gradient(to right bottom, #fa983a, #fad390);
+      border-radius: 2rem;
+      background: rgb(232, 194, 191);
+      color: rgb(72, 94, 108);
       cursor: pointer;
+      transition: .5s;
+    }
+
+    .join-btn:hover {
+      border-radius: .3rem;
+      background: rgb(72, 94, 108);
+      color: rgb(232, 194, 191);
     }
 
     .usertext:focus {
       border-radius: .3rem;
-      background: linear-gradient(to right bottom, #ff7675, #fab1a0);
+      background: #e1b12c;
     }
 
     .foot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 7%;
-      background: #706fd3;
     }
 
   </style>
@@ -87,7 +108,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="logo">logo</div>
+    <div class="logo"><h1>logo</h1></div>
     <div class="information">
       <form class="inform-box" action="#" method="post">
         <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
