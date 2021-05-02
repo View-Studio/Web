@@ -22,12 +22,54 @@
 
     .content {
       width: 60%;
+      z-index: 2;
+      background: #999;
+    }
+
+    .head-part {
+      width: 80%;
       background: #222;
+      margin: 50% auto;
+    }
+
+    .body-part {
+      width: 80%;
+      background: #222;
+      margin: 50% auto;
+    }
+
+    .foot-part {
+      width: 80%;
+      background: #222;
+      margin: 50% auto;
     }
 
     .side {
       width: 20%;
-      background: #333;
+    }
+
+    .side::before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, .4);
+    }
+
+    .side-1 {
+      background: url('https://media.giphy.com/media/jIqh3ym2s7GU/giphy.gif') no-repeat;
+      background-size: cover;
+
+    }
+
+    .side-2 {
+      background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
+      background-size: cover;
+      background-position: left;
+
     }
 
   </style>
@@ -38,13 +80,13 @@
 
     </aside>
     <div class="content">
-      <header>
-
+      <header class="head-part">
+        <h1>한 프로그래머의 일기</h1>
       </header>
-      <section>
-
+      <section class="body-part">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, minus earum debitis! Amet tenetur incidunt dolorem repellendus, doloribus. Quisquam, ratione. Eius inventore nam tenetur hic blanditiis corporis, minus odit sapiente fuga tempora deserunt dolore id iusto placeat molestiae ullam voluptatum, eligendi praesentium. Nam distinctio similique est magni quibusdam esse rem, nostrum dolores nisi, sequi. Repudiandae tenetur natus odit magni nulla facere hic quo, ipsum odio ullam voluptas amet, nemo eligendi perspiciatis at deserunt nihil et. Modi dolore eius rem earum libero perferendis magni fugit explicabo obcaecati, dolorum dolorem fuga. Beatae quia velit, iusto esse quod consectetur cumque enim blanditiis officiis.</p>
       </section>
-      <footer>
+      <footer class="foot-part">
 
       </footer>
     </div>
