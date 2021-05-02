@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,91 +8,101 @@
   <link rel="stylesheet" href="reset.css">
   <style>
 
-    html, body {
-      width: 100%;
-      height: 100vh;
+  html, body {
+    width: 100%;
+  }
+
+  body {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .side-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 23%;
+    height: 100%;
+    background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+  }
+
+  .side-cont {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+    .wrap {
+      width: 77%;
+      height: auto !important;
+    }
+
+    .header {
+      width: 800px;
+      height: 200px;
+      /* background: #333; */
+      padding: 40px;
+      margin: 0 auto;
+    }
+
+    .header-item {
+      margin: 20px;
+    }
+
+    hr {
+      border: 0.1px solid gray;
     }
 
     .container {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
+      width: 800px;
+      margin: 0 auto;
+      /* background: #222; */
     }
 
-    .content {
-      width: 60%;
-      z-index: 2;
-      background: #999;
-    }
-
-    .head-part {
-      width: 80%;
-      background: #222;
-      margin: 50% auto;
-    }
-
-    .body-part {
-      width: 80%;
-      background: #222;
-      margin: 50% auto;
-    }
-
-    .foot-part {
-      width: 80%;
-      background: #222;
-      margin: 50% auto;
-    }
-
-    .side {
-      width: 20%;
-    }
-
-    .side::before {
-      content: "";
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, .4);
-    }
-
-    .side-1 {
-      background: url('https://media.giphy.com/media/jIqh3ym2s7GU/giphy.gif') no-repeat;
-      background-size: cover;
-
-    }
-
-    .side-2 {
-      background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
-      background-size: cover;
-      background-position: left;
-
+    .footer {
+      width: 800px;
+      margin: 0 auto;
+      font-size: 14px;
+      text-align: center;
+      color: #aaa;
     }
 
   </style>
 </head>
 <body>
-  <div class="container">
-    <aside class="side side-1">
+  <div class="side-wrap">
+    <div class="side-cont"></div>
+  </div>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="header-item">한 개발자의 개발일기</h1>
+      <p class="header-item">M.I.M | 2021.05.03.00:57</p>
+      <hr class="header-item">
+    </header>
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
 
-    </aside>
-    <div class="content">
-      <header class="head-part">
-        <h1>한 프로그래머의 일기</h1>
-      </header>
-      <section class="body-part">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, minus earum debitis! Amet tenetur incidunt dolorem repellendus, doloribus. Quisquam, ratione. Eius inventore nam tenetur hic blanditiis corporis, minus odit sapiente fuga tempora deserunt dolore id iusto placeat molestiae ullam voluptatum, eligendi praesentium. Nam distinctio similique est magni quibusdam esse rem, nostrum dolores nisi, sequi. Repudiandae tenetur natus odit magni nulla facere hic quo, ipsum odio ullam voluptas amet, nemo eligendi perspiciatis at deserunt nihil et. Modi dolore eius rem earum libero perferendis magni fugit explicabo obcaecati, dolorum dolorem fuga. Beatae quia velit, iusto esse quod consectetur cumque enim blanditiis officiis.</p>
-      </section>
-      <footer class="foot-part">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
 
-      </footer>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
     </div>
-    <aside class="side side-2">
-
-    </aside>
+    <footer class="footer">Blog Design and Made by <a href="https://github.com/code-MIM" style="text-decoration:none;"><span style="color: #6bacce;">code-M.I.M</span></a></footer>
   </div>
 </body>
 </html>
