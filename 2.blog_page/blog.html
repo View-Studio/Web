@@ -1,108 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>M.I.M blog</title>
-  <link rel="stylesheet" href="reset.css">
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M.I.M blog</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+        }
 
-  html, body {
-    width: 100%;
-  }
+        body {
+            display: flex;
+            justify-content: flex-end;
+        }
 
-  body {
-    display: flex;
-    justify-content: flex-end;
-  }
+        .side-wrap {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            width: 23%;
+            height: 100%;
+            background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
+            background-size: cover;
+            background-position: 50% 0;
+        }
 
-  .side-wrap {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 23%;
-    height: 100%;
-    background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
-    background-size: cover;
-    background-position: 50% 0;
-  }
+        .side-cont {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
 
-  .side-cont {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+        .icon {
+            margin-bottom: 35px;
+        }
 
-    .wrap {
-      width: 77%;
-      height: auto !important;
-    }
+        .wrap {
+            width: 77%;
+            height: auto !important;
+        }
 
-    .header {
-      width: 800px;
-      height: 200px;
-      /* background: #333; */
-      padding: 40px;
-      margin: 0 auto;
-    }
+        .header {
+            width: 800px;
+            height: 200px;
+            padding: 40px;
+            margin: 0 auto;
+        }
 
-    .header-item {
-      margin: 20px;
-    }
+        .header-item {
+            margin: 20px;
+        }
 
-    hr {
-      border: 0.1px solid gray;
-    }
+        hr {
+            border: 0.0001rem solid #eee;
+            border-bottom: 0px;
+        }
 
-    .container {
-      width: 800px;
-      margin: 0 auto;
-      /* background: #222; */
-    }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
 
-    .footer {
-      width: 800px;
-      margin: 0 auto;
-      font-size: 14px;
-      text-align: center;
-      color: #aaa;
-    }
+        section {
+            margin-bottom: 100px;
+        }
 
-  </style>
+        .images {
+            width: 750px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .para {
+            margin: 3px;
+        }
+
+        .last-para {
+            margin-bottom: 50px;
+        }
+
+        .footer {
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            margin-top: 12px;
+            font-size: 14px;
+            text-align: center;
+            color: #aaa;
+        }
+
+    </style>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
+
 <body>
-  <div class="side-wrap">
-    <div class="side-cont"></div>
-  </div>
-  <div class="wrap">
-    <header class="header">
-      <h1 class="header-item">한 개발자의 개발일기</h1>
-      <p class="header-item">M.I.M | 2021.05.03.00:57</p>
-      <hr class="header-item">
-    </header>
-    <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi dolores fugiat quaerat, doloremque veritatis facere, modi expedita. Asperiores sit blanditiis esse eaque similique maxime tempore enim culpa ex commodi dolorem nihil ratione cumque quibusdam inventore alias animi id, quos harum hic? Nisi provident, similique molestias, nihil aliquam, dolore veritatis sed possimus ex obcaecati eos! Voluptates nulla consectetur excepturi ipsam esse distinctio error tenetur architecto ratione doloremque. Numquam accusantium omnis officiis ipsam! Nobis odit rerum voluptas modi ea, facilis dignissimos magni, assumenda quos illum libero cupiditate nulla qui nostrum aliquid repellendus, soluta provident est! Consequuntur ab exercitationem maxime sapiente nobis.</p>
+    <div class="side-wrap">
+        <div class="side-cont">
+            <a class="icon" href="#"><span style="color:#fff; font-size: 1.5rem;"><i class="far fa-edit"></i></span></a>
+            <a class="icon" href="#"><span style="color:#fff; font-size: 1.5rem;"><i class="far fa-clipboard"></i></span></a>
+            <a class="icon" href="#"><span style="color:#fff; font-size: 1.5rem;"><i class="fas fa-globe-asia"></i></span></a>
+            <a class="icon" href="#"><span style="color:#fff; font-size: 1.5rem;"><i class="fas fa-cog"></i></span></a>
+        </div>
     </div>
-    <footer class="footer">Blog Design and Made by <a href="https://github.com/code-MIM" style="text-decoration:none;"><span style="color: #6bacce;">code-M.I.M</span></a></footer>
-  </div>
+    <div class="wrap">
+        <header class="header">
+            <h1 class="header-item">한 개발자의 개발일기</h1>
+            <p class="header-item">M.I.M | 2021.05.03.00:57</p>
+            <hr class="header-item">
+        </header>
+        <div class="container">
+            <section>
+                <h2>첫 번째로 만든 페이지(로그인 페이지)</h2>
+                <img class="images" src="login.png" alt="로그인 페이지 이미지">
+                <p class="para">개인 작업의 첫 번째 신호탄으로 만든 내 첫 Self-Made page다.</p>
+                <p class="para">보다시피 로그인을 할 수 있는 페이지를 만들었고, html과 css로 뼈대와 디자인만 만들어놓은 페이지다.</p>
+                <p class="para last-para"><mark>로그인 기능</mark>의 구현은 지금 공부 중인 <mark>javascript</mark>와 <mark>python</mark>으로 추후 만든 다음 추가할 생각이다.</p>
+                <img class="images" src="sign_up.png" alt="회원가입 페이지 이미지">
+                <p class="para">로그인 페이지를 만들다 보니 회원가입 페이지도 만들어보자는 생각에서 만들게된 페이지다.</p>
+                <p class="para">양식과 디자인도 로그인 페이지와 한 끗 차이였기 때문에 만드는데 큰 어려움은 없었다.</p>
+                <p class="para last-para">두 페이지를 만들 때 css의 transform과 transition 이라는 기능을 많이 사용했다.</p>
+            </section>
+            <section>
+                <h2>두 번째로 만든 페이지(블로그 페이지)</h2>
+                <img class="images" src="blog.png" alt="블로그 페이지 이미지">
+                <p class="para">두 번째 개인 작업으로는 블로그 페이지를 만들어봤고, 이 페이지 역시 내 Self-Made page다.</p>
+                <p class="para">첫 번째 작업을 하며 모던함과 간결함의 중요성을 많이 깨닫고 느꼈기 때문에 최대한 간결하고자 노력했다.</p>
+                <p class="para last-para">그리고 뷰포트 왼쪽에 gif이미지 파일을 fixed상태로 지정해서 활동적인 느낌도 기져가고자 했다.</p>
+            </section>
+            <section>
+                <h2>웹 작업 전용 깃 허브 레파지토리</h2>
+                <img src="github.png" alt="" class="images">
+                <p class="para">내 개인 웹 작업과 웹 공부내용을 업로드하는 깃 허브 레파지토리다.</p>
+                <p class="para">지금은 두 개의 웹 작업물 밖에 없지만, 쉬지않고 새로운 웹을 만들고 다양한 시도를 하고 성공시킬 것이다.</p>
+                <p class="para">다음 작업은 친구가 만든 게임을 소개 하는 게임소개 페이지를 만들 계획 중에 있다.</p>
+            </section>
+        </div>
+        <hr>
+        <footer class="footer">Blog Design and Made by <a href="https://github.com/code-MIM" target="_blank" style="text-decoration:none;"><span style="color: #6bacce;">code-M.I.M</span></a></footer>
+    </div>
+    <audio autoplay controls loop id="bee-sound" src="apple.mp3" style="display:none;"></audio>
+    <script type="text/javascript">
+        const beeSound = document.getElementById("bee-sound");
+        const [body] = document.getElementsByTagName("body");
+
+        function play() {
+            if (!beeSound instanceof HTMLAudioElement) return;
+            if (beeSound.paused) {
+                beeSound.play();
+            } else {
+                body.removeEventListener("click", play);
+            }
+            console.log(beeSound.paused);
+        }
+        body.addEventListener("click", play);
+
+    </script>
 </body>
+
 </html>

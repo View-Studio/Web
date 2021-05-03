@@ -1,166 +1,170 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="circle.css">
-  <title>로그인 | M.I.M</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="circle.css">
+    <title>로그인 | M.I.M</title>
 
-  <style>
-  * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
 
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
 
-    .container {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      /* background: rgba(53, 59, 72); */
-      /* background: rgba(99, 110, 114, 0.5); */
-      background: url('https://i.pinimg.com/originals/83/ea/d6/83ead6d874a749ebab256af2b7781878.png') no-repeat;
-      background-size: 100% 100%;
-    }
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            /* background: rgba(53, 59, 72); */
+            /* background: rgba(99, 110, 114, 0.5); */
+            background: url('https://i.pinimg.com/originals/83/ea/d6/83ead6d874a749ebab256af2b7781878.png') no-repeat;
+            background-size: 100% 100%;
+        }
 
-    .box {
-      position: relative;
-      left: 115px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 0px;
-    }
+        .box {
+            position: relative;
+            left: 115px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 0px;
+        }
 
-    .login-box {
-      z-index: 1;
-    }
+        .login-box {
+            z-index: 1;
+        }
 
-    .machine-box {
-      position: relative;
-      right: 330px;
-      bottom: 10px;
-      width: 366px;
-      height: 366px;
-    }
+        .machine-box {
+            position: relative;
+            right: 330px;
+            bottom: 10px;
+            width: 366px;
+            height: 366px;
+        }
 
 
-    .usertext {
-      background: #5b7484;
-      padding: 2em;
-      width: 15rem;
-      margin-bottom: 20px;
-      border-radius: 2.5em;
-      outline: none;
-      -webkit-transition: 1s;
-      -moz-transition: 1s;
-      -o-transition: 1s;
-      transition: .7s;
-    }
+        .usertext {
+            background: #5b7484;
+            padding: 2em;
+            width: 15rem;
+            margin-bottom: 20px;
+            border-radius: 2.5em;
+            outline: none;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -o-transition: 1s;
+            transition: .7s;
+        }
 
-    .usertext::placeholder {
-      color: #f4d4d4;
-    }
+        .usertext::placeholder {
+            color: #f4d4d4;
+        }
 
-    .usertext:focus {
-      transform: scale(1.3);
-      background-color: #f4d4d4;
-    }
+        .usertext:focus {
+            transform: scale(1.3);
+            background-color: #f4d4d4;
+        }
 
-    .usertext:focus::placeholder {
-      color: #5b7484;
-    }
+        .usertext:focus::placeholder {
+            color: #5b7484;
+        }
 
-    .login-btn {
-      padding: 2em;
-      width: 18.5rem;
-      margin-bottom: 20px;
-      border-radius: 2.5em;
-      cursor: pointer;
-      outline: none;
-      background: #ffb8b8;
-      color: #4a69bd;
-      -webkit-transition: 1s;
-      -moz-transition: 1s;
-      -o-transition: 1s;
-      transition: 1s;
-    }
+        .login-btn {
+            padding: 2em;
+            width: 18.5rem;
+            margin-bottom: 20px;
+            border-radius: 2.5em;
+            cursor: pointer;
+            outline: none;
+            background: #ffb8b8;
+            color: #4a69bd;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+        }
 
-    .login-btn:hover {
-      border-radius: 0px;
-    }
+        .login-btn:hover {
+            border-radius: 0px;
+        }
 
-    .etc-box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      right: 5px;
-      top: 180px;
-    }
+        .etc-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            right: 5px;
+            top: 180px;
+        }
 
-    .etc-btn {
-      margin: 20px;
-      color: #57606f;
-      font-size: 1.05em;
-      text-decoration: none;
-      transition: .4s;
-    }
+        .etc-btn {
+            margin: 20px;
+            color: #57606f;
+            font-size: 1.05em;
+            text-decoration: none;
+            transition: .4s;
+        }
 
-    .etc-btn:hover {
-      color: #01a3a4;
-    }
+        .etc-btn:hover {
+            color: #01a3a4;
+        }
 
-  </style>
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="origin"></div>
-    <div class="box">
-      <form action="#" method="post" class="login-box">
-        <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
-        <input class="usertext" type="password" name="userPW" placeholder="userPW">
-        <input class="login-btn" type="submit" value="LOG IN">
-      </form>
-      <div class="machine-box">
-        <div class="circle-container">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-red-semi-5aec49dbe5d420f928cece7001b96267ee17a9d3577374b68b4fba47c547bd75.svg
+    <div class="container">
+        <div class="origin"></div>
+        <div class="box">
+            <form action="#" method="post" class="login-box">
+                <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
+                <input class="usertext" type="password" name="userPW" placeholder="userPW">
+                <input class="login-btn" type="submit" value="LOG IN">
+            </form>
+            <div class="machine-box">
+                <div class="circle-container">
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-red-semi-5aec49dbe5d420f928cece7001b96267ee17a9d3577374b68b4fba47c547bd75.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-red-2f7737b286dff1537adff47b8201aa43e33cbe1e47bd528ca2189809917fe132.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-red-2f7737b286dff1537adff47b8201aa43e33cbe1e47bd528ca2189809917fe132.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-orange-semi-d9d13d5529ae8f3c91dc80b182cf14fc629118bbdac8851b36e102dd15652557.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-orange-semi-d9d13d5529ae8f3c91dc80b182cf14fc629118bbdac8851b36e102dd15652557.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-orange-235189ed438049f084ca873f6ed2055c4127ddef84a55fa464053f34c10157e6.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-orange-235189ed438049f084ca873f6ed2055c4127ddef84a55fa464053f34c10157e6.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-yellow-semi-af7a94ccf4768a81e6692d808f00e33ac88d9110f842d02c5ab211577686301a.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-yellow-semi-af7a94ccf4768a81e6692d808f00e33ac88d9110f842d02c5ab211577686301a.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-yellow-bf8ec5927e343b3a804448d37a799c9c346af320f30b3cdc019297938fe00300.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-yellow-bf8ec5927e343b3a804448d37a799c9c346af320f30b3cdc019297938fe00300.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-green-semi-6b12059c6aea11bf60e8f3c89afdffb6b817913541a1ce72cbca29f733224984.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-green-semi-6b12059c6aea11bf60e8f3c89afdffb6b817913541a1ce72cbca29f733224984.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-green-8a75a5e7cc4f8426a47f5ebfe2459283d3554cfdcf8dc5f492fda0b26d2d6d79.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-green-8a75a5e7cc4f8426a47f5ebfe2459283d3554cfdcf8dc5f492fda0b26d2d6d79.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-blue-semi-930c6662236ab84933e73083bc057b869b895bd36cef9e3e5254018fb61bc82a.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-blue-semi-930c6662236ab84933e73083bc057b869b895bd36cef9e3e5254018fb61bc82a.svg
           " alt="" class="circle-1">
-          <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-blue-50996d0762fb6d9ee13d6a52404dd01327fc542cc729777d532c9b633103c835.svg
+                    <img src="https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-blue-50996d0762fb6d9ee13d6a52404dd01327fc542cc729777d532c9b633103c835.svg
           " alt="" class="circle-1">
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="etc-box">
+            <a class="etc-btn" href="sign_up.html">회원가입</a>
+            <p>|</p>
+            <a class="etc-btn" href="#">ID/PW 찾기</a>
+        </div>
     </div>
-    <div class="etc-box">
-      <a class="etc-btn" href="sign_up.html">회원가입</a>
-      <p>|</p>
-      <a class="etc-btn" href="#">ID/PW 찾기</a>
-    </div>
-  </div>
 </body>
+
 </html>

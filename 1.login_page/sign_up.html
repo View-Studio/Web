@@ -1,133 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>회원가입 | M.I.M</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입 | M.I.M</title>
 
-  <style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
 
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
 
-    * {
-      margin: 0;
-      padding: 0;
-      border: 0;
-    }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://i.pinimg.com/originals/53/76/ed/5376ed0ba13ea516274e975f79806932.png') no-repeat;
+            background-size: 100% 100%;
+        }
 
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
+        .container {
+            width: 30%;
+            height: 100%;
+        }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url('https://i.pinimg.com/originals/53/76/ed/5376ed0ba13ea516274e975f79806932.png') no-repeat;
-      background-size: 100% 100%;
-    }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 7%;
+        }
 
-    .container {
-      width: 30%;
-      height: 100%;
-    }
+        .information {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 86%;
+        }
 
-    .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 7%;
-    }
+        .inform-box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
-    .information {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 86%;
-    }
+        .usertext {
+            outline: none;
+            padding: 1rem;
+            border-radius: 2rem;
+            background: #85837b;
+            color: #e7e6dc;
+            transition: .5s;
+        }
 
-    .inform-box {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
+        .usertext::placeholder {
+            color: #e7e6dc;
+        }
 
-    .usertext {
-      outline: none;
-      padding: 1rem;
-      border-radius: 2rem;
-      background: #85837b;
-      color: #e7e6dc;
-      transition: .5s;
-    }
+        .usertext:focus::placeholder {
+            color: rgb(195, 11, 7);
+        }
 
-    .usertext::placeholder {
-      color: #e7e6dc;
-    }
+        .date {
+            padding: .85rem;
+        }
 
-    .usertext:focus::placeholder {
-      color: rgb(195, 11, 7);
-    }
+        .join-btn {
+            outline: none;
+            padding: 1rem;
+            border-radius: 2rem;
+            background: rgb(232, 194, 191);
+            color: rgb(72, 94, 108);
+            cursor: pointer;
+            transition: .5s;
+        }
 
-    .date {
-      padding: .85rem;
-    }
+        .join-btn:hover {
+            border-radius: .3rem;
+            background: rgb(72, 94, 108);
+            color: rgb(232, 194, 191);
+        }
 
-    .join-btn {
-      outline: none;
-      padding: 1rem;
-      border-radius: 2rem;
-      background: rgb(232, 194, 191);
-      color: rgb(72, 94, 108);
-      cursor: pointer;
-      transition: .5s;
-    }
+        .usertext:focus {
+            border-radius: .3rem;
+            background: #e1b12c;
+        }
 
-    .join-btn:hover {
-      border-radius: .3rem;
-      background: rgb(72, 94, 108);
-      color: rgb(232, 194, 191);
-    }
+        .foot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 7%;
+        }
 
-    .usertext:focus {
-      border-radius: .3rem;
-      background: #e1b12c;
-    }
-
-    .foot {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 7%;
-    }
-
-  </style>
+    </style>
 
 </head>
+
 <body>
-  <div class="container">
-    <div class="logo"><h1>logo</h1></div>
-    <div class="information">
-      <form class="inform-box" action="#" method="post">
-        <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
-        <input class="usertext" type="password" name="userPW" placeholder="userPW">
-        <input class="usertext" type="password" name="reconfirm_userPW" placeholder="Reconfirm userPW">
-        <input class="usertext" type="text" name="name" placeholder="Name" autocomplete="off">
-        <input class="usertext date" type="date" name="birth_day">
-        <select class="usertext" name="gender">
-          <option value="male">남성</option>
-          <option value="female">여성</option>
-        </select>
-        <input class="usertext" type="email" name="email" placeholder="e-mail" autocomplete="off">
-        <input class="usertext" type="tel" name="phone_num" placeholder="phone number">
-        <input class="join-btn" type="submit" name="join" value="가입하기">
-      </form>
+    <div class="container">
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div class="information">
+            <form class="inform-box" action="#" method="post">
+                <input class="usertext" type="text" name="userID" placeholder="userID" autocomplete="off">
+                <input class="usertext" type="password" name="userPW" placeholder="userPW">
+                <input class="usertext" type="password" name="reconfirm_userPW" placeholder="Reconfirm userPW">
+                <input class="usertext" type="text" name="name" placeholder="Name" autocomplete="off">
+                <input class="usertext date" type="date" name="birth_day">
+                <select class="usertext" name="gender">
+                    <option value="male">남성</option>
+                    <option value="female">여성</option>
+                </select>
+                <input class="usertext" type="email" name="email" placeholder="e-mail" autocomplete="off">
+                <input class="usertext" type="tel" name="phone_num" placeholder="phone number">
+                <input class="join-btn" type="submit" name="join" value="가입하기">
+            </form>
+        </div>
+        <div class="foot">
+            <p>이용약관 | 개인정보 처리 방침 | 고객센터</p>
+        </div>
     </div>
-    <div class="foot">
-      <p>이용약관 | 개인정보 처리 방침 | 고객센터</p>
-    </div>
-  </div>
 </body>
+
 </html>
