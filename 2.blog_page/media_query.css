@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   html, body {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   body {
@@ -9,10 +9,17 @@
   }
 
   .side-wrap {
+    position: relative;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
     background-size: cover;
+    background-position: 50% 27%;
+  }
+
+  .wrap {
+    margin: 0 auto;
+    margin-top: 30px;
   }
 
 }
