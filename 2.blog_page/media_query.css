@@ -11,10 +11,10 @@
   .side-wrap {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 180px;
     background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
     background-size: cover;
-    background-position: 50% 27%;
+    background-position: 50% 29%;
   }
 
   .wrap {
