@@ -28,6 +28,29 @@
 
 @media screen and (max-width: 768px) {
 
+  html, body {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    display: block;
+  }
+
+  .side-wrap {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
+    background-size: cover;
+    background-position: 50% 29%;
+  }
+
+  .wrap {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
 }
 
 
@@ -35,6 +58,6 @@
 @media screen and (max-width: 320px) {
   html, body {
     width: 100%;
-    height: 100px;
+    height: auto;
   }
 }
