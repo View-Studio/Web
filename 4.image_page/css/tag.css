@@ -1,0 +1,31 @@
+body {
+  height: auto;
+  background: #ddd;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+}
+
+
+.img-wrap {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+footer {
+  visibility: hidden;
+}
+
+.img-item {
+  /* position: absolute; */
+  width: 400px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 10px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 5px #999
+}
