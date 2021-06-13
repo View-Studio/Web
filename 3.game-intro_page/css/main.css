@@ -1,0 +1,72 @@
+@keyframes triangle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro-wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+  display: none;
+}
+
+.intro {
+  position: fixed;
+}
+
+.first-intro {
+  z-index: 10;
+  display: block;
+}
+
+.second-intro {
+  z-index: 9;
+  display: none;
+}
+
+.third-intro {
+  z-index: 8;
+  display: none;
+}
+
+.forth-intro {
+  z-index: 7;
+  display: none;
+}
+
+.board-wrap {
+  position: relative;
+  width: auto;
+  height: 100px;
+}
+
+.story-board {
+  font-size: 27px;
+}
+
+.story-board:hover {
+  cursor: default;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: triangle 2s infinite;
+}
+
+.triangle:hover {
+  cursor: pointer;
+}
