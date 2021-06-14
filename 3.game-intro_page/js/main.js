@@ -16,4 +16,5 @@ function nextPage3() {
 function nextPage4() {
   document.querySelector('#four').style.display = 'none';
   document.querySelector('.intro-wrap').style.display = 'none';
+  document.querySelector('.select-wrap').style.display = 'block';
 }

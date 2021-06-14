@@ -12,14 +12,42 @@
   }
 }
 
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes item-rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #eee;
+}
+
 .intro-wrap {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ddd;
-  display: none;
+  background: #eee;
+  /* display: none; */
 }
 
 .intro {
@@ -69,4 +97,69 @@
 
 .triangle:hover {
   cursor: pointer;
+}
+
+.select-wrap {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  animation: rotating 20s linear infinite;
+  display: none;
+}
+
+.select-item {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  animation: item-rotating 20s linear infinite;
+}
+
+.select-item:hover {
+  cursor: pointer;
+}
+
+.a-item {
+  top: 7%;
+  left: 7%;
+}
+
+.b-item {
+  top: 0;
+  left: 38.8%;
+  /* transform: translateX(-50%); */
+}
+
+.c-item {
+  top: 7%;
+  right: 7%;
+}
+
+.d-item {
+  top: 38.8%;
+  right: 0;
+}
+
+.e-item {
+  bottom: 0;
+  left: 38.8%;
+}
+
+.f-item {
+  bottom: 7%;
+  left: 7%;
+}
+
+.g-item {
+  top: 38.8%;
+  left: 0;
+}
+
+.h-item {
+  bottom: 7%;
+  right: 7%;
+}
+
+.item-img {
+  border-radius: 20px;
 }
