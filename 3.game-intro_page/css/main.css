@@ -32,6 +32,7 @@
   }
 }
 
+
 body {
   display: flex;
   justify-content: center;
@@ -103,7 +104,7 @@ body {
   position: relative;
   width: 800px;
   height: 800px;
-  animation: rotating 20s linear infinite;
+  animation: rotating 29s linear infinite;
   display: none;
 }
 
@@ -112,11 +113,12 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 20px;
-  animation: item-rotating 20s linear infinite;
+  animation: item-rotating 29s linear infinite;
 }
 
 .select-item:hover {
   cursor: pointer;
+  z-index: 20;
 }
 
 .a-item {
@@ -160,6 +162,15 @@ body {
   right: 7%;
 }
 
+.item-link {
+
+}
+
 .item-img {
   border-radius: 20px;
+  transition: all 0.8s;
+}
+
+.item-img:hover {
+  transform: scale(1.5);
 }
