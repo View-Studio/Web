@@ -32,13 +32,19 @@
   }
 }
 
+@keyframes spaceship-ani {
+  100% {
+    background-position:  -2550px 0;
+  }
+}
+
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: #eee;
+  background: #fff;
 }
 
 .intro-wrap {
@@ -108,11 +114,25 @@ body {
   display: none;
 }
 
+.interactive {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border-radius: 20px; */
+  background: url("../image/sprite_spaceship.png") no-repeat 0 0 / auto 150px;
+  animation: spaceship-ani 1.2s infinite steps(17);
+  display: none;
+}
+
 .select-item {
   position: absolute;
   width: 180px;
   height: 180px;
   border-radius: 20px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
   animation: item-rotating 29s linear infinite;
 }
 
