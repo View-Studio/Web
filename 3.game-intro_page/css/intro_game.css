@@ -82,3 +82,12 @@ html, body {
   position: relative;
   background: #999;
 }
+
+.charDetail {
+  width: 47%;
+  height: 55%;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 70px;
+  background: #333;
+}
