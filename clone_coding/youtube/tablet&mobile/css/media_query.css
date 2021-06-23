@@ -1,0 +1,643 @@
+@media screen and (max-width: 768px) and (min-width: 426px){
+  /* head-bar 파트 */
+
+  .head-bar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+  }
+
+  .head-logo,
+  .head-icon {
+    margin: 0 14px;
+  }
+
+  .head-logo > i,
+  .head-logo > a {
+    font-size: 28px;
+  }
+
+  .head-logo > i {
+    color: red;
+  }
+
+  .head-logo > a {
+    color: #f1f2f6;
+  }
+
+  .head-icon > i {
+    font-size: 24px;
+    color: #f1f2f6;
+  }
+
+  .head-icon > i:hover {
+    cursor: pointer;
+  }
+
+  /* video 영상 파트 */
+
+  .play-video {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .play-video > div {
+    width: 100%;
+    height: 37vh;
+    background-color: black;
+    color: #fff;
+  }
+
+  /* bottom-wrap 파트 */
+
+  .bottom-wrap {
+    display: flex;
+  }
+
+
+  /* detail-wrap 파트 */
+
+  .detail-wrap {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+  }
+
+  .metadata {
+
+  }
+
+  .metadata > ul {
+    display: flex;
+    margin: 3px auto;
+  }
+
+  .hashtag {
+    margin: 0 3px;
+  }
+
+  .hashtag > a {
+    font-size: 13px;
+    color: #3742fa;
+  }
+
+  .video-detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px auto;
+  }
+
+  .video-detail:hover {
+    cursor: pointer;
+  }
+
+  .video-detail > p {
+    width: 95%;
+    height: 45px;
+    overflow: hidden;
+  }
+
+  .view-detail {
+    width: 98%;
+    margin: 3px auto;
+    font-size: 12px;
+    color: gray;
+  }
+
+  .action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 99%;
+  }
+
+  .action-icon > .item {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-icon > .item >i {
+    color: gray;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .action-icon> .item > i:hover {
+    color: #4a69bd;
+    cursor: pointer;
+  }
+
+  .action-icon > .item > p {
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+  }
+
+  .detail-channel {
+    width: 95%;
+    margin: 7px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .channel {
+    display: flex;
+    align-items: center;
+  }
+
+  .channel-img {
+    border-radius: 50%;
+  }
+
+  .channel-ex {
+    margin-left: 8px;
+  }
+
+  .subscribers {
+    font-size: 11px;
+    color: gray;
+  }
+
+  .subscribe {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+
+  .subscribe:hover {
+    cursor: pointer;
+  }
+
+  .subscribe > span {
+    color: #fff;
+  }
+
+
+  /* another-wrap 파트 */
+
+  .another-wrap {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+  }
+
+  .another-wrap > p {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .another-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .another-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .another-item > div {
+    width: 70%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 425px) {
+  /* head-bar 파트 */
+
+  .head-bar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+  }
+
+  .head-logo,
+  .head-icon {
+    margin: 0 14px;
+  }
+
+  .head-logo > i,
+  .head-logo > a {
+    font-size: 28px;
+  }
+
+  .head-logo > i {
+    color: red;
+  }
+
+  .head-logo > a {
+    color: #f1f2f6;
+  }
+
+  .head-icon > i {
+    font-size: 24px;
+    color: #f1f2f6;
+  }
+
+  .head-icon > i:hover {
+    cursor: pointer;
+  }
+
+  /* video 영상 파트 */
+
+  .play-video {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .play-video > div {
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    color: #fff;
+  }
+
+  /* detail-wrap 파트 */
+
+  .detail-wrap {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+  }
+
+  .metadata {
+
+  }
+
+  .metadata > ul {
+    display: flex;
+    margin: 3px auto;
+  }
+
+  .hashtag {
+    margin: 0 3px;
+  }
+
+  .hashtag > a {
+    font-size: 13px;
+    color: #3742fa;
+  }
+
+  .video-detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px auto;
+  }
+
+  .video-detail:hover {
+    cursor: pointer;
+  }
+
+  .video-detail > p {
+    width: 95%;
+    height: 45px;
+    overflow: hidden;
+  }
+
+  .view-detail {
+    width: 98%;
+    margin: 3px auto;
+    font-size: 12px;
+    color: gray;
+  }
+
+  .action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 99%;
+  }
+
+  .action-icon > .item {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-icon > .item >i {
+    color: gray;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .action-icon> .item > i:hover {
+    color: #4a69bd;
+    cursor: pointer;
+  }
+
+  .action-icon > .item > p {
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+  }
+
+  .detail-channel {
+    width: 95%;
+    margin: 7px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .channel {
+    display: flex;
+    align-items: center;
+  }
+
+  .channel-img {
+    border-radius: 50%;
+  }
+
+  .channel-ex {
+    margin-left: 8px;
+  }
+
+  .subscribers {
+    font-size: 11px;
+    color: gray;
+  }
+
+  .subscribe {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+
+  .subscribe:hover {
+    cursor: pointer;
+  }
+
+  .subscribe > span {
+    color: #fff;
+  }
+
+
+  /* another-wrap 파트 */
+
+  .another-wrap {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+  }
+
+  .another-wrap > p {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .another-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .another-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .another-item > div {
+    width: 70%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+  /* head-bar 파트 */
+
+  .head-bar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+  }
+
+  .head-logo,
+  .head-icon {
+    margin: 0 14px;
+  }
+
+  .head-logo > i,
+  .head-logo > a {
+    font-size: 28px;
+  }
+
+  .head-logo > i {
+    color: red;
+  }
+
+  .head-logo > a {
+    color: #f1f2f6;
+  }
+
+  .head-icon > i {
+    font-size: 24px;
+    color: #f1f2f6;
+  }
+
+  .head-icon > i:hover {
+    cursor: pointer;
+  }
+
+  /* video 영상 파트 */
+
+  .play-video {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .play-video > div {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: #fff;
+  }
+
+  /* detail-wrap 파트 */
+
+  .detail-wrap {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+  }
+
+  .metadata {
+
+  }
+
+  .metadata > ul {
+    display: flex;
+    margin: 3px auto;
+  }
+
+  .hashtag {
+    margin: 0 3px;
+  }
+
+  .hashtag > a {
+    font-size: 13px;
+    color: #3742fa;
+  }
+
+  .video-detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px auto;
+  }
+
+  .video-detail:hover {
+    cursor: pointer;
+  }
+
+  .video-detail > p {
+    width: 95%;
+    height: 45px;
+    overflow: hidden;
+  }
+
+  .view-detail {
+    width: 98%;
+    margin: 3px auto;
+    font-size: 12px;
+    color: gray;
+  }
+
+  .action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 99%;
+  }
+
+  .action-icon > .item {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-icon > .item >i {
+    color: gray;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .action-icon> .item > i:hover {
+    color: #4a69bd;
+    cursor: pointer;
+  }
+
+  .action-icon > .item > p {
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+  }
+
+  .detail-channel {
+    width: 95%;
+    margin: 7px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .channel {
+    display: flex;
+    align-items: center;
+  }
+
+  .channel-img {
+    border-radius: 50%;
+  }
+
+  .channel-ex {
+    margin-left: 8px;
+  }
+
+  .subscribers {
+    font-size: 11px;
+    color: gray;
+  }
+
+  .subscribe {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+
+  .subscribe:hover {
+    cursor: pointer;
+  }
+
+  .subscribe > span {
+    color: #fff;
+  }
+
+
+  /* another-wrap 파트 */
+
+  .another-wrap {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+  }
+
+  .another-wrap > p {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .another-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .another-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .another-item > div {
+    width: 70%;
+  }
+
+}
