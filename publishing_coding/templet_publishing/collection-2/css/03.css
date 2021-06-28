@@ -24,7 +24,7 @@ a {
 .left-wrap {
     width: 50%;
     height: 100%;
-    background: #fff;
+    z-index: 10;
     position: relative;
 }
 
@@ -145,14 +145,16 @@ a {
     width: 50%;
     height: 100%;
     display: flex;
-    background: #EDE0DF;
+    background: #ECDEDE;
 }
 
 .diamond {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -167,7 +169,7 @@ a {
 
 .card-side-wrap {
     position: relative;
-    z-index: 5;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -194,7 +196,7 @@ a {
 }
 
 .side-bottom {
-    height: 65%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,9 +264,7 @@ a {
 
 .float-bottom > hr {
     width: 250px;
-    height: 0;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
 
@@ -294,4 +294,98 @@ a {
     font-size: 20px;
     font-weight: lighter;
     text-decoration: underline 1px solid;
+}
+
+
+/* high-wrap 파트 */
+
+.high-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.left-high {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-high > div {
+    margin-top: 1%;
+    width: 33.4%;
+}
+
+.left-high > div > p {
+  line-height: 1.2;
+}
+
+.right-high {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.right-high > hr {
+    border: 1px solid #000;
+    border-right: 0;
+    margin: 4% 0;
+    width: 0;
+    height: 200px;
+}
+
+.right-high > p {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.right-high > h1 {
+    font-size: 2.9rem;
+    font-weight: lighter;
+    font-family: 'Great Vibes', cursive;
+}
+
+.right-high>a {
+  color: #000;
+}
+
+
+
+/* rect 파트 */
+
+.rect {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.rect-up {
+  width: 24%;
+  height: 24%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.rect-down {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }

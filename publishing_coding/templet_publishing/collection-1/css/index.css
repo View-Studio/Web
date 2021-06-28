@@ -212,7 +212,8 @@ a {
 .side-bottom > hr {
     height: 100px;
     width: 0;
-    border: 1px solid rgba(112, 112, 112, 1);
+    border: 2px solid rgba(112, 112, 112, 1);
+    border-right: 0;
     margin-bottom: 28px;
     margin-left: 40px;
 }
@@ -262,8 +263,10 @@ a {
 }
 
 .float-bottom > hr {
+    height: 0;
     width: 250px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 0;
     margin-bottom: 10px;
 }
 

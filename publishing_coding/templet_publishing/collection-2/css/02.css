@@ -24,25 +24,13 @@ a {
 .left-wrap {
     width: 50%;
     height: 100%;
-    background: #fff;
+    background: #E5EAEB;
     position: relative;
 }
-
-.circle {
-    position: absolute;
-    top: 18%;
-    left: -25%;
-    z-index: 0;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: #EDE0DF;
-}
-
 
 .top {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     height: 10%;
     display: flex;
     align-items: center;
@@ -145,16 +133,8 @@ a {
     width: 50%;
     height: 100%;
     display: flex;
-    background: #EDE0DF;
+    background: #FFF;
 }
-
-.diamond {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 4;
-}
-
 
 .card {
     position: relative;
@@ -167,7 +147,7 @@ a {
 
 .card-side-wrap {
     position: relative;
-    z-index: 5;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -194,7 +174,7 @@ a {
 }
 
 .side-bottom {
-    height: 65%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,9 +242,7 @@ a {
 
 .float-bottom > hr {
     width: 250px;
-    height: 0;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
 
@@ -294,4 +272,68 @@ a {
     font-size: 20px;
     font-weight: lighter;
     text-decoration: underline 1px solid;
+}
+
+
+
+/* high-wrap 파트 */
+
+.high-wrap {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.high-img {
+    margin-left: 10%;
+    width: 25%;
+    height: 77%;
+}
+
+.high-h1 {
+    width: 50%;
+    margin: auto 10%;
+    line-height: .8;
+}
+
+.high-h1 > h1 {
+    font-size: 6rem;
+    font-weight: lighter;
+}
+
+.high-h1 > h1:nth-child(1) {
+    margin-left: 10%;
+}
+
+.high-h1 > h1:nth-child(3) {
+    margin-left: 21%;
+}
+
+.high-h1 > h1:nth-child(12) {
+    margin-left: 5%;
+}
+
+.high-h1 > h1:nth-child(14) {
+    margin-left: 20%;
+}
+
+
+
+.dia-wrap {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.diamond {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 87%;
 }
