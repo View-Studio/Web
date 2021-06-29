@@ -322,7 +322,7 @@ a {
 }
 
 .left-high > div > p {
-  line-height: 1.2;
+    line-height: 1.2;
 }
 
 .right-high {
@@ -354,8 +354,8 @@ a {
     font-family: 'Great Vibes', cursive;
 }
 
-.right-high>a {
-  color: #000;
+.right-high > a {
+    color: #000;
 }
 
 
@@ -363,29 +363,29 @@ a {
 /* rect 파트 */
 
 .rect {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  z-index: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
 }
 
 .rect-up {
-  width: 24%;
-  height: 24%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+    width: 24%;
+    height: 24%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 .rect-down {
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
