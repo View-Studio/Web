@@ -15,8 +15,8 @@ obj.a = 3;
 // nested object
 var obj2 = {
   x: 3,
-  arr: [1, 2, 3];
-}
+  arr: [1, 2, 3]
+};
 
 obj2.arr[1];
 
