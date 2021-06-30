@@ -40,13 +40,13 @@ a {
 }
 
 .head-logo {
-  width: 12%;
+  width: 16%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .head-logo > a {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: lighter;
   letter-spacing: -0.7px;
 }
@@ -57,7 +57,7 @@ a {
 }
 
 .head-menu > ul {
-  height: 35px;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -72,9 +72,6 @@ a {
 }
 
 .contact-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 15px 35px;
   border-radius: 40px;
   letter-spacing: -0.7px;
