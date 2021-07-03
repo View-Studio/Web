@@ -82,7 +82,7 @@ Prototype Link
 <__proto__와 프로토타입 체인의 이해>
 
 __proto__속성은 모든 객체가 빠짐없이 가지고 있는 속성
-__proto__는 객체가 생성될 때 조상이었던 함수의 Prototype Object를 가리킵니다.
+__proto__는 객체가 생성될 때 조상이었던 함수(객체를 생성한 함수)의 Prototype Object를 가리킵니다.
 
 function Person() {}
 
@@ -97,7 +97,7 @@ console.log(kim.eyes); // => 2
 kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾을 때 까지 상위 프로토타입을 탐색합니다.
 최상위인 Object함수의 Prototype Object까지 도달했는데도 못찾았을 경우 undefined를 리턴합니다.
 이렇게 __proto__속성을 통해 상위 프로토타입(Prototype Object와 Prototype Link)과 연결되어있는 형태를
-프로토타입 체인(Chain)이라고 합니다.
+프로토타입 체이닝(Chaining)이라고 합니다.
 이런 프로토타입 체인 구조 때문에 모든 객체는 Object의 자식이라고 불리고,
 Object함수의 Prototype Object에 있는 모든 속성을 사용할 수 있습니다.
 Object함수의 Prototype Object의 __proto__ 속성은 null값을 가집니다.
