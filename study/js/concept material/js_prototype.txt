@@ -98,7 +98,7 @@ kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾
 최상위인 Object함수의 Prototype Object까지 도달했는데도 못찾았을 경우 undefined를 리턴합니다.
 이렇게 __proto__속성을 통해 상위 프로토타입(Prototype Object와 Prototype Link)과 연결되어있는 형태를
 프로토타입 체이닝(Chaining)이라고 합니다.
-이런 프로토타입 체인 구조 때문에 모든 객체는 Object의 자식이라고 불리고,
+이런 프로토타입 체인 구조 때문에 모든 객체는 Object함수의 자식이라 불리고,
 Object함수의 Prototype Object에 있는 모든 속성을 사용할 수 있습니다.
 Object함수의 Prototype Object의 __proto__ 속성은 null값을 가집니다.
 한 가지 예를 들면 toString함수가 있겠습니다.
@@ -117,9 +117,9 @@ JavaScript의 모든 객체에는 __proto__속성이 있어서
 __proto__속성이 있기 때문에 코드의 재사용과 객체 지향적인 프로그래밍을 할 수 있습니다.
 
 
-생성자 함수.prototype.constructor === 생성자 함수;	//true
-생성자 함수.prototype === (생성자 함수로 만들어진 객체).__proto__;	  //true
-(생성자 함수로 만들어진 객체).__proto__.constructor === 생성자 함수;	    //true
+생성자 함수.prototype.constructor === 생성자 함수;     //true
+생성자 함수.prototype === (생성자 함수로 만들어진 객체).__proto__;     //true
+(생성자 함수로 만들어진 객체).__proto__.constructor === 생성자 함수;     //true
 
 ========================================================================
 
