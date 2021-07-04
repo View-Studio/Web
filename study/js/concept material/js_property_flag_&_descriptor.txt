@@ -158,17 +158,20 @@ let descriptor = Object.getOwnPropertyDescriptor(Math, 'PI');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [출처] : https://ko.javascript.info/property-descriptors
 [출처] : https://velog.io/@hyounglee/TIL-83
-
-
-
-
-
-
-
-
-
-
-
-

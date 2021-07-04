@@ -116,6 +116,65 @@ number, string, boolean 같은 원시타입은 물론 함수나 배열 같은 �
 
 
 
+====================================================================================
+
+<Javascript 의 객체 분류>
+
+1. 네이티브 객체(Native Object)
+2. 호스트 객체(Host Object)
+3. 사용자정의 객체
+
+
+네이티브 객체(Native Object)
+--------------------------------------------------------------------------------------------------------------------------------
+자바스크립트 언어 규약(ECMAScript)으로 정의되어진 객체.
+애플리케이션 전역의 공통 기능을 제공한다.
+네이티브 객체는 애플리케이션의 환경과 관계없이 언제나 사용할 수 있다.
+네이티브 객체는 모든 built-in object(내장 객체)를 포함한다.
+
+
+[네이티브 객체 종류]
+
+Object, String, Number, Function, Array, RegExp, Date, Math, Boolean,
+Error(+기타 에러관련 obj), Symbol(ES6), JSON, Promise, Proxy, Map, Set...
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+호스트 객체(Host Object)
+--------------------------------------------------------------------------------------------------------------------------------
+실행 환경에서 제공하는 객체(OS, Web browser에 따라 제공 객체 달라짐)
+네이티브객체가 아닌 객체는 모두 호스트 객체임.
+window, XmlHttpRequest, HTMLElement 등의 DOM 노드 객체와 같이 호스트 환경에 정의된 객체.
+
+
+[호스트 객체 종류]
+
+전역객체(Global object) :
+모든 객체의 유일한 최상위 객체 (브라우저의 window, 서버의 global 객체)
+(Global object ≠ Global Objects)
+
+BOM(Browser Object Model) :
+브라우저 탭 또는 브라우저 창의 모델을 생성.
+BOM의 최상위 객체는 window 객체(현재 브라우저 창 또는 탭을 표현)
+→ ( window의 하위 객체 : location, history, document, navigator, screen )
+
+DOM(Document Object Model) :
+현재 웹페이지의 모델을 생성.
+DOM의 최상위 객체는 document 객체로 전체 문서를 표현.
+--------------------------------------------------------------------------------------------------------------------------------
+
+====================================================================================
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,3 +182,5 @@ number, string, boolean 같은 원시타입은 물론 함수나 배열 같은 �
 [출처] : https://velog.io/@jimmyjoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B0%9D%EC%B2%B4%EB%A6%AC%ED%84%B0%EB%9F%B4
 
 [출처] : https://velog.io/@reveloper-1311/%EC%9D%BC%EA%B8%89-%EA%B0%9D%EC%B2%B4First-Class-Object%EB%9E%80
+
+[출처] : https://velog.io/@bangina/FE%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84-%ED%98%B8%EC%8A%A4%ED%8A%B8-%EA%B0%9D%EC%B2%B4Host-Objects%EC%99%80-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EA%B0%9D%EC%B2%B4Native-Objects
