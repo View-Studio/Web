@@ -68,10 +68,17 @@ this 식별자가 바라봐야 할 대상 객체
 
 (0) 코드의 전역 범위가 실행되며 Global Execution Context를 콜 스택에 추가
 (1) 함수 호출(실행)
-(2) Functional Execution Context를 콜 스택에 생성(활성화)
+
+ - ( Creation Phase ) -
+(2) Functional Execution Context를 콜 스택에 생성
 (3) 해당 Functional Execution Context 관련 코드 실행을 위한 환경정보 수집
 (4) Functional Execution Context에 환경정보 저장
-(5) Functional Execution Context 관련 코드 실행
+- ( Creation Phase ) -
+
+- ( Execution Phase ) -
+(5) Functional Execution Context 관련 코드 실행(활성화)
+- ( Execution Phase ) -
+
 (6) 코드 실행을 끝내고 해당 Functional Execution Context를 콜 스택에서 삭제
 (7) 앱 종료 시 Global Execution Context가 삭제됩니다
 
