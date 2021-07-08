@@ -213,7 +213,6 @@ LexicalEnvironment를 VariableEnvironment의 OuterEnvironmentReference값으로 
 (5)
 어떤 식별자를 Global Execution Context 의 LexicalEnvironment와 VariableEnvironment까지
 올라가서 검색을 했는데도 찾지 못 했다면 undefined를 반환합니다.
-( LexicalEnvironment와 VariableEnvironment 를 구성하는 EnvironmentRecord가 객체이기 때문이다. )
 
 -----------------------------------------------------------------------------------------------------------
 
