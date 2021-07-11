@@ -1,77 +1,169 @@
 
-< 배열 부울 값 반환 메소드 >
+< 배열 순회 메소드 >
 ===============================================================================
 
 [ forEach ]
 -----------------------------------------------------------------------------------------------------------
- - 지정된 함수의 결과가 true일 때까지 배열의 각 원소를 반복  -
+ - 배열의 모든 요소를 반복하며 콜백 함수를 실행  -
 
-[ array.some( func() ) ]
+[ array.forEach( func(요소, 인덱스, 배열전체), thisArg ) ]
+
+~ 특징 ~
+
+(1). 기본 for 문에서의 break와 continue 키워드 사용이 불가능
+(2). continue 를 콜백함수 return 으로 구현 가능함
+(3). 다른 언어의 for 문과 같다
+(4). 콜백함수의 매개변수로 요소, 인덱스, 배열전체가 순서대로 들어갈 수 있다. (옵션이다)
+(5). thisArg는 forEach에서 사용될 this값이고, 사용하지 않을 경우 undefined값이 전달 됩니다. (this에 전역객체가 바인딩 됨)
+
 
 ex)
-var arr =[ 1, 2, 3 ];
 
-arr.forEach( function( value ) {
-  console.log( value );   // 1 2 3
+var arr = [1, 2, 3];
+
+arr.forEach(function (value) {
+    console.log(value);     // 1 2 3
 });
+
+
+
+var arr = [1, 3, 5, 7, 9];
+
+arr.forEach(function (e, i, a) {
+    console.log('인덱스 ' + i + ': ' + e + ', 배열의 전체는: ' + a);
+    // 매개변수 이름은 수정해도 되지만 순서는 변하지 않습니다.
+})
+// 인덱스 0: 1, 배열의 전체는: 1,3,5,7,9
+// 인덱스 1: 3, 배열의 전체는: 1,3,5,7,9
+// 인덱스 2: 5, 배열의 전체는: 1,3,5,7,9
+// 인덱스 3: 7, 배열의 전체는: 1,3,5,7,9
+// 인덱스 4: 9, 배열의 전체는: 1,3,5,7,9
+
+
+
+var arr = [1, 3, 5, 7, 9];
+
+arr.forEach((e, i, a) => {
+    if (e === 5) return;     // return 값이 true든 false 든 그냥 continue
+    console.log('인덱스 ' + i + ': ' + e + ', 배열의 전체는: ' + a);
+})
+// 인덱스 0: 1, 배열의 전체는: 1,3,5,7,9
+// 인덱스 1: 3, 배열의 전체는: 1,3,5,7,9
+// 인덱스 3: 7, 배열의 전체는: 1,3,5,7,9
+// 인덱스 4: 9, 배열의 전체는: 1,3,5,7,9
 -----------------------------------------------------------------------------------------------------------
+
 
 
 
 [ map ]
 -----------------------------------------------------------------------------------------------------------
- - "배열내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과"를 가진 새로운 배열을 만들어낸다.  -
+ - " 배열내의 모든 요소에 주어진 함수를 호출한 '결과 값' "를 가진 새로운 배열을 만들어낸다.  -
 
-[ array.map() ]
+[ array.map( func(요소, 인덱스, 배열전체), thisArg ) ]
+
+~ 특징 ~
+(1). 콜백함수의 매개변수로 요소, 인덱스, 배열전체가 순서대로 들어갈 수 있다. (옵션이다)
+(2). thisArg는 map에서 사용될 this값이고, 사용하지 않을 경우 undefined값이 전달 됩니다. (this에 전역객체가 바인딩 됨)
+
 
 ex)
-var arr =[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-var isEven = function( value ) {
-  return value % 2 === 0;
+var isEven = function (value) {
+    return value % 2 === 0;
 };
-var newArr = arr.map( isEven );
-console.log( newArr );    // [ false, true, false, true, false, true, false, true, false, true ]
+
+var newArr = arr.map(isEven);
+console.log(newArr);     // [ false, true, false, true, false, true, false, true, false, true ]
 -----------------------------------------------------------------------------------------------------------
 
 
 
 [ filter ]
 -----------------------------------------------------------------------------------------------------------
- - 지정된 함수의 결과가 true일 때까지 배열의 각 원소를 반복  -
+ - 실행된 콜백함수의 결과가 true인 요소들로만 이루어진 새 배열을 반환  -
 
-[ array.some( func() ) ]
+[ array.filter( func(요소, 인덱스, 배열전체), thisArg ) ]
+
+~ 특징 ~
+(1). 콜백함수의 매개변수로 요소, 인덱스, 배열전체가 순서대로 들어갈 수 있다. (옵션이다)
+(2). thisArg는 filter에서 사용될 this값이고, 사용하지 않을 경우 undefined값이 전달 됩니다. (this에 전역객체가 바인딩 됨)
+
 
 ex)
-var arr =[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-var isEven = function( value ) {
-  return value % 2 === 0;
+var isEven = function (value) {
+    return value % 2 === 0;
 };
-var newArr = arr.filter( isEven );
-console.log( newArr );    // [ 2, 4, 6, 8, 10 ]
+
+var newArr = arr.filter(isEven);
+console.log(newArr);     // [ 2, 4, 6, 8, 10 ]
 -----------------------------------------------------------------------------------------------------------
 
 
 
 [ reduce ]
 -----------------------------------------------------------------------------------------------------------
- - 배열의 각 요소에 대해 주어진 reducer 함수를 실행하고, 하나의 결과값을 반환한다.  -
+ - 배열의 각 요소에 대해 주어진 콜백함수를 실행하고, 하나의 결과값을 반환한다.  -
 
-[ array.reduce() ]
+[ array.reduce( func( 누산기, 현재 요소, 현재 요소의 인덱스, 배열전체 ) [, initialValue]) ]
+[ array.reduce( func( accumulator, currentValue, currentIndex, array ) [, initialValue]) ]
+
+~ 특징 ~
+(1). 콜백함수의 매개변수로 누산기, 현재 요소, 현재 요소의 인덱스(옵션), 배열 전체(옵션)가 순서대로 들어간다.
+(2). 콜백함수의 반환(return) 값은 누산기에 할당된다.
+(3). 누산기의 마지막 할당 값이 결과값이 된다.
+
 
 ex)
-var arr =[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+  var res = [0, 1, 2, 3, 4];
 
-var callBack =function( previousValue, currentValue) {
-  return previousValue + currentValue;
-}
+  var result = res.reduce(
+      function (accumulator, currentValue, currentIndex, array) {
+          console.log(`accumulator : ${accumulator}`);
+          console.log(`currentValue : ${currentValue}`);
+          console.log(`currentIndex : ${currentIndex}`);
+          console.log(`array : ${array}`);
+          console.log("                              ");
+          return accumulator + currentValue;
+      }, 0);
 
-var value = arr.reduce( callBack, index );
-console.log( value );    // 55
+  console.log("result:", result);
+
+// accumulator : 0
+// currentValue : 0
+// currentIndex : 0
+// array : 0,1,2,3,4
+//                                
+// accumulator : 0
+// currentValue : 1
+// currentIndex : 1
+// array : 0,1,2,3,4
+//                               
+// accumulator : 1
+// currentValue : 2
+// currentIndex : 2
+// array : 0,1,2,3,4
+//                               
+// accumulator : 3
+// currentValue : 3
+// currentIndex : 3
+// array : 0,1,2,3,4
+//                               
+// accumulator : 6
+// currentValue : 4
+// currentIndex : 4
+// array : 0,1,2,3,4
+//                                
+// result: 10
 -----------------------------------------------------------------------------------------------------------
 
 ===============================================================================
+
+
+
 
 
 
@@ -83,3 +175,4 @@ console.log( value );    // 55
 
 
 [출처] : http://blog.302chanwoo.com/2017/08/javascript-array-method/
+[출처] : https://ratseno.tistory.com/25
