@@ -10,5 +10,28 @@ function outer() {
   console.log(a);    // 1
 }
 
-outer();    
+outer();
 console.log(a);    // 1
+
+
+
+
+
+
+
+var a = 1;
+
+
+var user = {
+  name: 'kyungmin',
+  urls: function () {
+    console.log(a);
+    var obj = {
+      a: 3,
+      print: function() {
+        console.log(a);
+      }
+    }
+    obj.print();
+  }
+};

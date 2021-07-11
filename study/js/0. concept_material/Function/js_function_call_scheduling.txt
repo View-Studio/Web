@@ -55,7 +55,7 @@ setTimeout(sayHi(), 1000);    // 특징(4)에서 설명한 잘못된 코드
 - 일정 시간이 지난 후에 함수를 실행하는 행동을 주기적으로 하는 메서드 -
 
 ~ 문법 ~
-setInterval( func | code, [delay], [arg1], [arg2], ... ) 
+var intervalId = setInterval( func | code, [delay], [arg1], [arg2], ... ) 
 
 
 
@@ -70,6 +70,10 @@ setInterval( func | code, [delay], [arg1], [arg2], ... )
 (4). 한 번 실행되고 끝나는게 아니라 주기적으로 실행된다
 
 (5). alert/confirm/prompt 창이 떠 있는 동안에도 내부 타이머를 멈추지 않습니다.
+
+(6). 위의 intervalId에는 setInterval의 ID값이 담긴다. ( clearInterval로 반복 실행을 종료할 때 사용한다. )
+
+(7). 어떠한 값도 리턴하지 않는다. ( 그렇기 때문에 위 intervalId에 setInterval의 ID값이 할당될 수 있는거다. )
 
 
 
