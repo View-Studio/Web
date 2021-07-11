@@ -1,0 +1,29 @@
+
+< this와 addEventListener의 관계 >
+===============================================================================
+
+document.getElementById('#btn').addEventListener('click', function(e){
+  console.log(this)
+});
+
+여기서 this는 e.currentTarget으로 바인딩됩니다. 
+e.currentTarget은 지금 이벤트가 동작하는 곳을 뜻합니다. 
+매우 간단히 설명하면 지금 addEventListener 부착된 HTML 요소를 뜻한다고 보시면 됩니다. 
+e.currentTarget, this, document.getElementById('버튼') 세개를 각각 출력해보시면 동일한 결과 값이 나옵니다.
+
+===============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[출처] : https://online.codingapple.com/unit/es6-2-eventlistener-constructor-this/
