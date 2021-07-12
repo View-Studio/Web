@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a69bd;
+}
+
+.header > h1 {
+  color: #F79F1F;
+}
+
+.body-wrap {
+  width: 100%;
+  height: 50%;
+}
+
+.display {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-display {
+  font-size: 5rem;
+  font-weight: lighter;
+  color: #4a69bd;
+  margin-bottom: 1.2%
+}
+
+.word-input {
+  width: 20%;
+  height: 10%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  outline: none;
+  transition: background-color .3s;
+}
+
+.word-input:focus {
+  background-color: #F79F1F;
+}
+
+.word-input[type=text] {
+  font-size: 27px;
+  font-weight: lighter;
+}
+
+.number-point {
+  width: 25%;
+  margin: 1.8% 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  align-items: baseline;
+}
+
+.timer-point {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 3px;
+}
+
+.score {
+  display: flex;
+  align-items: baseline;
+}
+
+.score-point {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 3px;
+}
+
+.start-btn {
+  width: 10%;
+  height: 8%;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4a69bd;
+  cursor: pointer;
+}
+
+.loading {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
