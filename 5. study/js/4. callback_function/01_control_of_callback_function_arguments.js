@@ -1,6 +1,6 @@
 var newArr = [10, 20, 30].map(function (currentValue, index) {
-  console.log(currentValue, index);
-  return currentValue + 5;
+    console.log(currentValue, index);
+    return currentValue + 5;
 });
 console.log(newArr);
 
@@ -19,8 +19,8 @@ console.log(newArr);
 // callback: function(currentValue, index, array)
 
 var newArr2 = [10, 20, 30].map(function (index, currentValue) {
-  console.log(index, currentValue);
-  return currentValue + 5;
+    console.log(index, currentValue);
+    return currentValue + 5;
 });
 console.log(newArr2);
 
