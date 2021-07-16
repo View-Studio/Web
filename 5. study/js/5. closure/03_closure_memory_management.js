@@ -17,6 +17,7 @@ outer = null;
 
 
 
+
 // (2) setInterval에 의한 클로저의 메모리 헤제
 
 (function () {
@@ -31,6 +32,7 @@ outer = null;
     };
     intervalId = setInterval(inner, 1000);
 })();
+
 
 
 
