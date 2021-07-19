@@ -8,6 +8,17 @@ body {
     justify-content: flex-end;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent
+}
+
 .side-wrap {
     position: fixed;
     left: 0;

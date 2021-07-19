@@ -3,6 +3,22 @@ body {
   background: #eee;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  /* margin-right: 10px; */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+
+}
+
 .back-btn {
   display: flex;
   margin: 10px;
