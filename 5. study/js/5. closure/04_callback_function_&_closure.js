@@ -70,7 +70,7 @@ alertCat(cats[1]);
 
 // 콜백함수로 고차함수를 사용해서 외부변수 참조 ( 클로저 활용 )
 
-var dogs = ['poodle', 'maltese', 'pomeranian '];
+var dogs = ['poodle', 'maltese', 'pomeranian'];
 var $ul = document.createElement('ul');
 
 var alertDogBuilder = function (dog) {

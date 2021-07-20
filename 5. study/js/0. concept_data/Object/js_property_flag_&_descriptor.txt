@@ -63,7 +63,7 @@ property descriptor:
 
 
 
-Object.defineproperty(obj, propertyName, descriptor)  (예시 코드 - 2 참조)
+Object.defineProperty(obj, propertyName, descriptor)  (예시 코드 - 2 참조)
 -----------------------------------------------------------------------------------------------------------
 Object 생성자 함수의 메서드
 프로퍼티의 플래그를 변경할 수 있다.
