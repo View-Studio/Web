@@ -1,0 +1,101 @@
+@keyframes triangle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.firstWrap {
+  width: 100%;
+  height: 100%;
+  background: #999;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameName {
+  font-size: 10rem;
+  margin-bottom: 40px;
+}
+
+.hashTagWrap {
+  width: 500px;
+  height: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  animation: triangle 1.5s infinite;
+}
+
+.triangle:hover {
+  cursor: pointer;
+}
+
+.secondWrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  background: #999;
+}
+
+.gameDetail {
+  width: 47%;
+  height: 55%;
+  position: absolute;
+  border-bottom-right-radius: 70px;
+  background: #333;
+}
+
+.thirdWrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  background: #999;
+}
+
+.charDetail {
+  width: 47%;
+  height: 55%;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 70px;
+  background: #333;
+}
+
+.forthWrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  background: #999;
+}

@@ -1,0 +1,196 @@
+@keyframes triangle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes item-rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes spaceship-ani {
+  100% {
+    background-position:  -2550px 0;
+  }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.intro-wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  /* display: none; */
+}
+
+.intro {
+  position: fixed;
+}
+
+.first-intro {
+  z-index: 10;
+  display: block;
+}
+
+.second-intro {
+  z-index: 9;
+  display: none;
+}
+
+.third-intro {
+  z-index: 8;
+  display: none;
+}
+
+.forth-intro {
+  z-index: 7;
+  display: none;
+}
+
+.board-wrap {
+  position: relative;
+  width: auto;
+  height: 100px;
+}
+
+.story-board {
+  font-size: 27px;
+}
+
+.story-board:hover {
+  cursor: default;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: triangle 2s infinite;
+}
+
+.triangle:hover {
+  cursor: pointer;
+}
+
+.select-wrap {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  animation: rotating 29s linear infinite;
+  display: none;
+}
+
+.interactive {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border-radius: 20px; */
+  background: url("../image/sprite_spaceship.png") no-repeat 0 0 / auto 150px;
+  animation: spaceship-ani 1.2s infinite steps(17);
+  display: none;
+}
+
+.select-item {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
+  animation: item-rotating 29s linear infinite;
+}
+
+.select-item:hover {
+  cursor: pointer;
+  z-index: 20;
+}
+
+.a-item {
+  top: 7%;
+  left: 7%;
+}
+
+.b-item {
+  top: 0;
+  left: 38.8%;
+  /* transform: translateX(-50%); */
+}
+
+.c-item {
+  top: 7%;
+  right: 7%;
+}
+
+.d-item {
+  top: 38.8%;
+  right: 0;
+}
+
+.e-item {
+  bottom: 0;
+  left: 38.8%;
+}
+
+.f-item {
+  bottom: 7%;
+  left: 7%;
+}
+
+.g-item {
+  top: 38.8%;
+  left: 0;
+}
+
+.h-item {
+  bottom: 7%;
+  right: 7%;
+}
+
+.item-link {
+
+}
+
+.item-img {
+  border-radius: 20px;
+  transition: all 0.8s;
+}
+
+.item-img:hover {
+  transform: scale(1.5);
+}
