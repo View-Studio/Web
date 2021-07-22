@@ -1,52 +1,61 @@
     @keyframes atom {
-      from {
-        transform: rotate(0deg);
-      }
+        from {
+            transform: rotate(0deg);
+        }
 
-      to {
-        transform: rotate(360deg);
-      }
+        to {
+            transform: rotate(360deg);
+        }
     }
 
     .circle-container {
-      display: flex;
-      position: relative;
+        display: flex;
+        position: relative;
     }
 
     .circle-1 {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      animation: atom 100s linear infinite;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        animation: atom 100s linear infinite;
     }
 
     .circle-1:nth-child(1) {
-      animation: atom 25s linear infinite;
+        animation: atom 25s linear infinite;
     }
+
     .circle-1:nth-child(2) {
-      animation: atom 30s linear infinite;
+        animation: atom 30s linear infinite;
     }
+
     .circle-1:nth-child(3) {
-      animation: atom 35s linear infinite;
+        animation: atom 35s linear infinite;
     }
+
     .circle-1:nth-child(4) {
-      animation: atom 40s linear infinite;
+        animation: atom 40s linear infinite;
     }
+
     .circle-1:nth-child(5) {
-      animation: atom 50s linear infinite;
+        animation: atom 50s linear infinite;
     }
+
     .circle-1:nth-child(6) {
-      animation: atom 60s linear infinite;
+        animation: atom 60s linear infinite;
     }
+
     .circle-1:nth-child(7) {
-      animation: atom 70s linear infinite;
+        animation: atom 70s linear infinite;
     }
+
     .circle-1:nth-child(8) {
-      animation: atom 80s linear infinite;
+        animation: atom 80s linear infinite;
     }
+
     .circle-1:nth-child(9) {
-      animation: atom 90s linear infinite;
+        animation: atom 90s linear infinite;
     }
+
     .circle-1:nth-child(10) {
-      animation: atom 100s linear infinite;
+        animation: atom 100s linear infinite;
     }

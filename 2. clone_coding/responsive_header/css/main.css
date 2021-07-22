@@ -1,75 +1,75 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 li {
-  margin: 10px;
+    margin: 10px;
 }
 
 .navbar {
-  height: 90px;
-  background: #263343;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 15px;
+    height: 90px;
+    background: #263343;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
 }
 
 .navbar_logo > * {
-  margin: 5px;
+    margin: 5px;
 }
 
 .fa-accusoft {
-  color: orange;
+    color: orange;
 }
 
 .navbar_logo > a {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 .navbar_menu {
-  display: flex;
+    display: flex;
 }
 
 .navbar_menu > li {
-  padding: 10px;
-  border-radius: 3px;
-  transition: all .3s;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all .3s;
 }
 
 .navbar_menu > li:hover {
-  background-color: rgba(255, 165, 0, 0.8);
+    background-color: rgba(255, 165, 0, 0.8);
 }
 
 .navbar_links {
-  display: flex;
+    display: flex;
 }
 
 .navbar_links > li > i {
-  color: #fff;
+    color: #fff;
 }
 
 .navbar_toggleBtn {
-  font-size: 17px;
-  color: rgba(255, 165, 0, 0.8);
-  display: none;
-  position: absolute;
-  right: 32px;
-  transition: color .3s;
+    font-size: 17px;
+    color: rgba(255, 165, 0, 0.8);
+    display: none;
+    position: absolute;
+    right: 32px;
+    transition: color .3s;
 }
 
 .navbar_toggleBtn:hover {
-  color: #fff;
+    color: #fff;
 }

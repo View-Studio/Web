@@ -1,22 +1,22 @@
 @media screen and (max-width: 1300px) {
-  .bottom-wrap {
-    display: block;
-    margin: 70px 60px 0 60px;
-  }
+    .bottom-wrap {
+        display: block;
+        margin: 70px 60px 0 60px;
+    }
 
-  .left-wrap {
-    width: 100%;
-  }
+    .left-wrap {
+        width: 100%;
+    }
 
-  .play-video > div {
-    height: 50vh;
-  }
+    .play-video > div {
+        height: 50vh;
+    }
 
-  .another-wrap {
-    width: 98%;
-  }
+    .another-wrap {
+        width: 98%;
+    }
 
-  .another-item > div {
-      width: 70%;
-  }
+    .another-item > div {
+        width: 70%;
+    }
 }

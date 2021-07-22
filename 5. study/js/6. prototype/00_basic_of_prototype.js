@@ -1,2 +1,3 @@
-var Constructor = function (/* ... */) {/* ... */}
+var Constructor = function ( /* ... */ ) {
+    /* ... */ }
 var instance = new Constructor();

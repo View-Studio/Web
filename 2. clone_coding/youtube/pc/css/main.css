@@ -5,7 +5,7 @@
 }
 
 body {
-      background: #f1f2f6;
+    background: #f1f2f6;
 }
 
 a {
@@ -23,7 +23,7 @@ hr {
 }
 
 i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .wrap {
@@ -75,14 +75,14 @@ i {
 /* bottom-wrap 파트 */
 
 .bottom-wrap {
-  display: flex;
-  margin: 10px 90px 0 90px;
+    display: flex;
+    margin: 10px 90px 0 90px;
 }
 
 /* left-wrap 파트 */
 
 .left-wrap {
-  width: 75%;
+    width: 75%;
 }
 
 
@@ -151,7 +151,7 @@ i {
 .action-icon {
     display: flex;
     align-items: center;
-    justify-content:  flex-end;
+    justify-content: flex-end;
     margin: 0 auto;
     width: 99%;
 }
@@ -201,7 +201,7 @@ i {
 }
 
 .channel-name {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 .subscribers {
@@ -255,7 +255,7 @@ i {
 }
 
 .another-item > div {
-  overflow: hidden;
+    overflow: hidden;
     width: 70%;
     height: 88px;
 }

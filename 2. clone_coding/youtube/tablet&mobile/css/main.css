@@ -1,25 +1,25 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 hr {
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: #ccc;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #ccc;
 }
 
 .wrap {
-  width: 100%;
-  height: auto;
-  background: #f1f2f6;
+    width: 100%;
+    height: auto;
+    background: #f1f2f6;
 }

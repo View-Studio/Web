@@ -9,14 +9,14 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 10px;
-  background-clip: padding-box;
-  border: 2px solid transparent
+    background-color: gray;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent
 }
 
 .side-wrap {
@@ -48,16 +48,21 @@ body::-webkit-scrollbar-thumb {
 .wrap {
     width: 77%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header {
-    width: 800px;
+    width: 60%;
     height: 200px;
     padding: 40px;
     margin: 0 auto;
 }
 
 .header-item {
+    width: 100%;
     margin: 20px;
 }
 
@@ -67,17 +72,19 @@ hr {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
 section {
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .images {
-    width: 750px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -91,7 +98,7 @@ section {
 }
 
 .footer {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 12px;

@@ -1,5 +1,5 @@
 var Constructor = function (name) {
-  this.name = name;
+    this.name = name;
 };
 
 Constructor.prototype.method1 = function () {};

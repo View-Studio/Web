@@ -1,86 +1,83 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 html,
 body {
-  width: 100%;
-  height: auto;
-  background-color: #eee;
+    width: 100%;
+    height: auto;
+    background-color: #eee;
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 10px;
-  background-clip: padding-box;
-  border: 2px solid transparent;
+    background-color: gray;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
 }
 
 .wrap {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row-1,
 .row-2 {
-  width: 90%;
-  height: auto;
-  margin: 2% 0;
-  display: flex;
-  justify-content: space-around;
+    width: 90%;
+    height: auto;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .sect-1,
 .sect-2 {
-  width: 45%;
-  height: auto;
-  border-radius: 10px;
-  overflow: hidden;
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .sect-1:hover > .explane,
-.sect-2:hover >.explane {
-  transform: translateY(-100.9%);
-  opacity: .5;
-  background-color: #000;
+.sect-2:hover > .explane {
+    transform: translateY(-100.9%);
+    opacity: .5;
+    background-color: #000;
 }
 
-.sect-1>img,
-.sect-2>img {
-  border-radius: 10px;
-  z-index: 0;
+.sect-1 > img,
+.sect-2 > img {
+    border-radius: 10px;
+    z-index: 0;
 }
 
 .explane {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  opacity: 0;
-  transition: all .5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .explane > p,
 .explane > h2,
 .explane > a {
-  color: #fff;
+    color: #fff;
 }
 
-.explane > h2 {
+.explane > h2 {}
 
-}
-.explane > a {
-
-}
+.explane > a {}
