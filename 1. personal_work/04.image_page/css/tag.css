@@ -46,6 +46,26 @@ body::-webkit-scrollbar-track {
   margin: 0 auto;
   margin-top: 120px;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer {
@@ -56,7 +76,7 @@ footer {
   width: 400px;
   height: auto;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 10px 10% 10px;
   border-radius: 20px;
   box-shadow: 8px 8px 5px #999;
   transition: filter .5s;

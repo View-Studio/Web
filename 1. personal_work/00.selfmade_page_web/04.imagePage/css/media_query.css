@@ -1,0 +1,16 @@
+@media screen and (max-width: 1770px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .col-wrap {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

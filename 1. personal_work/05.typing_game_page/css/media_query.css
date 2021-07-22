@@ -1,0 +1,63 @@
+@media screen and (max-width: 1024px) {
+  .number-point {
+    width: 50%;
+  }
+
+  .word-input {
+    width: 30%;
+  }
+
+  .start-btn {
+    width: 13%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .number-point {
+    width: 50%;
+  }
+
+  .word-input {
+    width: 40%;
+  }
+
+  .start-btn {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .body-wrap {
+    height: 60%;
+  }
+
+  .number-point {
+    width: 90%;
+  }
+
+  .word-input {
+    width: 50%;
+  }
+
+  .start-btn {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .body-wrap {
+    height: 70%;
+  }
+
+  .number-point {
+    width: 90%;
+  }
+
+  .word-input {
+    width: 70%;
+  }
+
+  .start-btn {
+    width: 38%;
+  }
+}
