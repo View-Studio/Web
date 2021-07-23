@@ -48,13 +48,22 @@ body::-webkit-scrollbar-thumb {
 .wrap {
     width: 77%;
     height: auto;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
+.particles-js-canvas-el {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
 .header {
+  z-index: 1;
     width: 60%;
     height: 200px;
     padding: 40px;
@@ -72,6 +81,7 @@ hr {
 }
 
 .container {
+  z-index: 1;
     width: 100%;
     margin: 0 auto;
 }
@@ -87,6 +97,7 @@ section {
     /* margin: 0 auto; */
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .para {
@@ -98,6 +109,7 @@ section {
 }
 
 .footer {
+  z-index: 1;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;

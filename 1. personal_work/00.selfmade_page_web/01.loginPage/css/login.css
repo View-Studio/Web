@@ -10,6 +10,10 @@ body {
     height: 100%;
 }
 
+body{
+  position: relative;
+}
+
 .container {
     position: relative;
     display: flex;
@@ -21,6 +25,12 @@ body {
     /* background: rgba(99, 110, 114, 0.5); */
     background: url('https://i.pinimg.com/originals/83/ea/d6/83ead6d874a749ebab256af2b7781878.png') no-repeat;
     background-size: 100% 100%;
+}
+
+.sketch {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .box {
@@ -52,10 +62,7 @@ body {
     margin-bottom: 20px;
     border-radius: 2.5em;
     outline: none;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: .7s;
+    transition: color, transform .7s;
 }
 
 .usertext::placeholder {
@@ -80,10 +87,7 @@ body {
     outline: none;
     background: #ffb8b8;
     color: #4a69bd;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    transition: border-radius .3s;
 }
 
 .login-btn:hover {
@@ -100,11 +104,12 @@ body {
 }
 
 .etc-btn {
+  z-index: 10;
     margin: 20px;
     color: #57606f;
     font-size: 1.05em;
     text-decoration: none;
-    transition: .4s;
+    transition: color .4s;
 }
 
 .etc-btn:hover {

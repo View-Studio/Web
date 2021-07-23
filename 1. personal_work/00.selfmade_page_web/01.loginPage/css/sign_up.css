@@ -11,6 +11,7 @@ body {
 }
 
 body {
+  position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +20,15 @@ body {
 }
 
 .container {
+  /* z-index: 10; */
     width: 30%;
     height: 100%;
+}
+
+.sketch {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .logo {
@@ -28,6 +36,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 7%;
+}
+
+.logo>h1 {
+  z-index: 10;
 }
 
 .information {
@@ -38,6 +50,7 @@ body {
 }
 
 .inform-box {
+  z-index: 10;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -91,4 +104,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 7%;
+}
+
+.foot > p {
+  z-index: 10;
 }

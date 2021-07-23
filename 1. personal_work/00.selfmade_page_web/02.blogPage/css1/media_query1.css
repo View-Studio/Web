@@ -58,6 +58,51 @@
 
 }
 
+@media screen and (max-width: 840px) {
+
+    html,
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        display: block;
+    }
+
+    .side-wrap {
+        position: relative;
+        width: 100%;
+        height: 180px;
+        background: url('https://media.giphy.com/media/Sp7IpE95BqzOU/giphy.gif') no-repeat;
+        background-size: cover;
+        background-position: 50% 29%;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    /* .header-item {
+        font-size: 1rem;
+    } */
+
+    .header {
+        width: 100%;
+    }
+
+    .container > section > h2 {
+      font-size: 1.3rem
+    }
+
+    .images {
+      width: 95%;
+    }
+
+}
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -93,6 +138,14 @@
         width: 100%;
     }
 
+    .container > section > h2 {
+      font-size: 1.3rem
+    }
+
+    .images {
+      width: 95%;
+    }
+
 }
 
 
@@ -120,5 +173,13 @@
     .wrap {
         margin: 0 auto;
         margin-top: 30px;
+    }
+
+    .container > section > h2 {
+      font-size: 1.2rem
+    }
+
+    .images {
+      width: 100%;
     }
 }

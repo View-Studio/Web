@@ -8,7 +8,11 @@ html,
 body {
     width: 100%;
     height: auto;
-    background-color: #eee;
+    background-color: #333;
+}
+
+body {
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -16,10 +20,17 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: gray;
+    background-color: #656565;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
 }
 
 .wrap {
@@ -41,9 +52,11 @@ body::-webkit-scrollbar-thumb {
 
 .sect-1,
 .sect-2 {
+  z-index: 1;
     width: 45%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 8px 8px 5px #222;
     overflow: hidden;
 }
 

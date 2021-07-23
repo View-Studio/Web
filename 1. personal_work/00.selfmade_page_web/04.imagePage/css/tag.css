@@ -15,9 +15,6 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
 }
 
-body::-webkit-scrollbar-track {
-
-}
 
 .back-btn {
   display: flex;
