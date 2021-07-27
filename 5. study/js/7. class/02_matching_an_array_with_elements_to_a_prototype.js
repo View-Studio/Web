@@ -12,8 +12,8 @@ var g = new Grade(100, 80);
 
 
 g.push(90);
-console.log(g); // Grade(3) [100, 80, 90]  length: 3
+console.log(g);    // Grade(3) [100, 80, 90]  length: 3
 
 delete g.length;
 g.push(70);
-console.log(g); // Grade(5) [100, 80, 90, empty, 70]  length: 5
+console.log(g);    // Grade(5) [100, 80, 90, empty, 70]  length: 5
