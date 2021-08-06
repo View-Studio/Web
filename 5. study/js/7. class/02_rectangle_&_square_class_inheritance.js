@@ -8,7 +8,7 @@ Rectangle.prototype.getArea = function () {
 };
 
 var rect1 = new Rectangle(3, 4);
-console.log(rect1);
+console.log(rect1); // Rectangle {width: 3, height: 4}
 
 
 
@@ -19,10 +19,10 @@ var Square = function (width) {
 
 Square.prototype = new Rectangle();
 var sq = new Square(5);
-console.log(sq);
+console.log(sq); // Square {width: 5, height: 5}
 
 
 
 
 var rect2 = new sq.constructor(2, 3);
-console.log(rect2);
+console.log(rect2); // Rectangle {width: 2, height: 3}
