@@ -13,6 +13,7 @@ console.log(rect1); // Rectangle {width: 3, height: 4}
 
 
 
+
 var Square = function (width) {
     Rectangle.call(this, width, width);
 };
