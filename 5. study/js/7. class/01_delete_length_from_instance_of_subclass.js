@@ -12,6 +12,7 @@ var g = new Grade(100, 80);
 
 
 
+
 g.push(90);
 console.log(g);    // Grade(3) [100, 80, 90]  length: 3
 
