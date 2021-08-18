@@ -9,6 +9,7 @@ Rectangle.prototype.getArea = function () {
 };
 
 
+
 Rectangle.isRectangle = function (instance) {
     return instance instanceof Rectangle && instance.width > 0 && instance.height > 0;
 }
