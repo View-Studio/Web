@@ -12,6 +12,7 @@ var Rectangle = class {
 
 
 
+
 var Square = class extends Rectangle {
     constructor(width) {
         super(width, width);
