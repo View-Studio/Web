@@ -23,6 +23,7 @@ const calculator = {
   }
 }
 
+
 // DOM object part
 const title = document.querySelector("#title");
 
@@ -55,6 +56,8 @@ function handleOnline() {
 function handleOffline() {
   console.log("This offline!");
 }
+
+
 
 const title = document.querySelector("#title");
 
