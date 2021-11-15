@@ -4,6 +4,7 @@ const loadCoords = function() {
   const loadedCords = localStorage.getItem(COORDS);
 }
 
+
 const init = function() {
 
 }
