@@ -76,39 +76,3 @@ body {
 .colorCollection > div:active {
   transform: scale(0.95);
 }
-
-.colorCollection > div:nth-child(1) {
-  background-color: #2c2c2c;
-}
-
-.colorCollection > div:nth-child(2) {
-  background-color: #fff;
-}
-
-.colorCollection > div:nth-child(3) {
-  background-color: #ff3b30;
-}
-
-.colorCollection > div:nth-child(4) {
-  background-color: #ff9500;
-}
-
-.colorCollection > div:nth-child(5) {
-  background-color: #ffcc00;
-}
-
-.colorCollection > div:nth-child(6) {
-  background-color: #4cd963;
-}
-
-.colorCollection > div:nth-child(7) {
-  background-color: #5ac8fa;
-}
-
-.colorCollection > div:nth-child(8) {
-  background-color: #0579ff;
-}
-
-.colorCollection > div:nth-child(9) {
-  background-color: #5856d6;
-}
