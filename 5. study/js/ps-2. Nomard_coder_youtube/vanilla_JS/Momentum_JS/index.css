@@ -25,7 +25,9 @@ body {
   justify-content: center;
   align-items: center;
   background: url('background.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
+  user-select: none;
   animation: bgLoad .5s;
 }
 
