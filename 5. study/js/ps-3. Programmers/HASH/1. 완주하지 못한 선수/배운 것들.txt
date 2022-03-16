@@ -1,0 +1,114 @@
+
+[내가 처음으로 접근한 방식]
+
+function solution(participant, completion) {
+  let answer = "";
+
+  //무식하게 풀기
+  for (let i = 0; i < participant.length; ) {
+    for (let j = 0; j < completion.length; j++) {
+      if (participant[j] === completion[i]) {
+        participant.splice(i, 1);
+        completion.splice(j, 1);
+        break;
+      }
+    }
+  }
+
+  answer = participant[0];
+
+  return answer;
+}
+
+
+
+
+{실수한 부분}
+
+1. 시간복잡도를 생각하지 않았다.
+
+
+
+{big-O 표기법}
+
+정의 : 알고리즘의 시간 복잡도와 공간 복잡도를 나타내는데 주로 사용되는 알고리즘의 효율성을 표기해주는 표기법
+
+* 시간 복잡도 : 알고리즘의 시간 효율성
+
+* 공간 복잡도 : 알고리즘의 공간(메모리) 효율성
+
+
+O(1) : 입력 자료의 수(n)에 관계없이 일정한 실행 시간을 갖는 알고리즘(Constant Time) - 예시 : 배열에서 특정 인덱스 찾기, 해시테이블 추가
+
+O(log n) : 초반엔 빠르지만 후반부 갈수록 시간이 증가함 - 예시 : 이진 탐색
+
+O(n) : 입력 자료의 크기가 N일경우 N 번만큼의 수행시간을 가진다. (linear). - 예시 : 연결 리스트 순회, 최대값찾기
+- 모든 입렵값을 적어도 한 번 이상은 살펴보는 알고리즘 -
+
+O(n log n) : 선형 로그형, 데이터의 수가 2배로 늘 때, 연산횟수가 2배 조금 넘게 증가한다. - 예시 : 퀵 정렬, 병합정렬 등
+- 대부분 효율이 좋은 알고리즘이 이에 해당 한다. 아무리 좋은 알고리즘이라 할지라도 n log n 보다 빠를 수 없다. -
+
+O(n^2) : 주로 2중 for loop를 사용하여 조합가능한 모든 쌍을 대상으로 하는 경우가 전형적(quadratic) - 예시 : 버블 정렬,삽입 정렬
+
+O(n^3) : 3차형(cubic)
+
+O(2^n) : 지수형 빅오, '지수적증가'는 무서운 연산횟수 증가를 야기한다. 예시 :피보나치수열
+
+O(c^n) : 최악의 시간 복잡도 - exponential - 예시 : recursion
+
+O(n!) : 계승(factorial)
+- 가장 느린 알고리즘으로 입력값이 조금만 커져도 계산이 어렵다. -
+
+
+
+{Array.prototype.sort([compareFunction])}
+
+compareFunction이 제공되지 않으면 요소를 문자열로 변환하고 유니 코드 코드 포인트 순서로 문자열을 비교하여 정렬합니다.
+예시) "banana"는 "cherry"앞에온다.
+예시) 숫자 정렬에서는 9가 80보다 앞에 오지만 숫자는 문자열로 변환되기 때문에 "80"은 유니 코드 순서에서 "9"앞에옵니다.
+
+
+{내가 처음으로 접근한 방식에서 사용한 알고리즘}
+
+O(n^2)
+
+
+
+
+[내가 인터넷에서 찾아본 방식]
+
+function solution(participant, completion) {
+  let answer = "";
+
+  participant.sort();
+  completion.sort();
+
+  for (let i = 0; i < participant.length; i++) {
+    if (participant[i] !== completion[i]) {
+      answer = participant[i];
+      break;
+    }
+  }
+
+  return answer;
+}
+
+
+
+
+{내가 내가 인터넷에서 찾아본 방식에서 사용한 알고리즘}
+
+[O(n log n) ]
+
+participant.sort();
+completion.sort();
+
+
+[O(n)]
+
+for (let i = 0; i < participant.length; i++) {
+    if (participant[i] !== completion[i]) {
+      answer = participant[i];
+      break;
+    }
+  }
