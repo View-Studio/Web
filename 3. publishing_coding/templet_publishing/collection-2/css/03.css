@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     font-family: 'Crimson Text', serif;
+    user-select: none;
 }
 
 html,
